@@ -85,9 +85,30 @@ OptionMenu "BrutalDoomOptionsLevel"
    StaticText "All changes made here will take effect on next level"
    StaticText "or when you start a new game."
    StaticText " "
-
+   
+  Option "Vanilla Monsters", "bd_classicmonsters", "YesOrNo"
+  StaticText "Disables new enemy AI and new attacks."
+  StaticText " "
+  
+  Option "Advanced Decorative Objects", "bd_disabledecorations", "DisabledOption"
+  StaticText "Fancy particle effects for torches and lamps."
+  StaticText " "
+  
+   Option "Level Enhancement System - Disable Voxels", "bd_voxeldec", "YesorNoFalse"
+  StaticText "Disable voxel decorations to prevent crashes on Android."
+  StaticText " "
+  
+  Option "New Weapons", "bd_disablenewguns", "DisabledOption"
+  StaticText "Selects if the new weapons should be spawned or not."
+  StaticText "(Submachinegun, Assault Shotgun, Railgun, etc.)"
+  StaticText " "
+  
+  Option "New Enemies", "bd_disablenewenemies", "DisabledOption"
   Option "Footstep Sounds", "bd_footstepsounds", "YesOrNo"
   Option "Spawn Demon Spheres", "bd_disabledemonspheres", "YesOrNoFalse"
+ // StaticText "Following CVARs still doesn't works:"
+  //Option "Cruelty Bonuses", "bd_disablecrueltybonus", "DisabledOption"
+ // Option "Bloody Screen Effects", "bd_disablebloodyscreen", "DisabledOption"
   Option "Rescuable Marines", "bd_disablefriendlymarines", "YesOrNoFalse"
   Option "Rocket Ammo is shootable", "bd_shootablerocketammo", "YesOrNo"
 }
