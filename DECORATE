@@ -184,58 +184,17 @@ damage 0
 
 //MAP ENHANCEMENT SYSTEM
 #include MapSpecificDec.txt
-#include MapDetection.txt
-#include Doom1Remap.txt
-#include Doom2Remap.txt
-#include PlutoniaRemap.txt
-#include TNTRemap.txt
-#include OthermapsRemap.txt
 
-
-//VEHICLES
-#include Tank.txt
-#include ArtilleryTank.txt
-#include Mech.txt
-#include Helicopter.txt
 #include HeavyMachinegun.txt
-#include VehicleCrashes.txt
-#include Repairs.txt
-#include EnemyTanks.txt
-#include Critters.txt
-#include BIKE.txt
-actor STPLasmaRifleReplacer : RandomSpawner
+
+
+Actor PressedUse : Inventory
 {
-    DropItem "Plasma_Gun"
-	DropItem "Plasma_Gun"
-	DropItem "Plasma_Gun"
-    DropItem "Railgun"
+inventory.maxamount 1
 }
 
-
-actor STBFGReplacer : RandomSpawner
+Actor Accelerate : Inventory
 {
-    DropItem "BIG_FUCKING_GUN"
-	DropItem "BIG_FUCKING_GUN"
-	DropItem "BIG_FUCKING_GUN"
-    DropItem "BFG10K"
+inventory.maxamount 1
 }
-
-
-actor STRocketLauncherReplacer : RandomSpawner
-{
-    DropItem "Rocket_Launcher"
-	DropItem "Rocket_Launcher"
-	DropItem "Rocket_Launcher"
-    DropItem "GrenadeLauncher"
-}
-
-
-actor STSSGReplacer : RandomSpawner
-{
-    DropItem "SSG"
-	DropItem "SSG"
-	DropItem "SSG"
-    DropItem "AssaultShotgun"
-}
-
 

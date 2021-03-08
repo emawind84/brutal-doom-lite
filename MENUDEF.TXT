@@ -1,71 +1,7 @@
-
-ListMenu "MainMenu"
+AddOptionMenu "OptionsMenu"
 {
-IfGame(Doom, Chex)
-	{
-		StaticPatch 94, 2, "M_DOOM"
-		Position 97, 72
-		IfOption(ReadThis)
-		{
-			Position 97, 64
-		}
-	}
-	IfGame(Strife)
-	{
-		StaticPatch 84, 2, "M_STRIFE"
-		Position 97, 45
-	}
-	IfGame(Heretic)
-	{
-		StaticPatch 88, 0, "M_HTIC"
-		StaticPatch 40, 10, "M_SKL01"
-		StaticPatch 232, 10, "M_SKL00"
-		Position 110, 56
-	}
-	IfGame(Hexen)
-	{
-		StaticPatch 88, 0, "M_HTIC"
-		StaticPatch 37, 80, "FBULB0"
-		StaticPatch 278, 80, "FBULA0"
-		Position 110, 56
-	}
-	
-	IfGame(Doom, Strife, Chex)
-	{
-		TextItem "New Game", "n", "PlayerclassMenu"
-		ifOption(SwapMenu)
-		{
-			TextItem "Load Game", "l", "LoadGameMenu"
-			TextItem "Save Game", "s", "SaveGameMenu"
-			TextItem "Options", "o", "OptionsMenu"/////////////
-			TextItem "Brutal Doom Options", "b", "BrutalMenu"
-			TextItem "Credits", "c", "BrutalCreditsMenu"
-		}
-		else
-		{
-			TextItem "Options", "o", "OptionsMenu"/////////////////////
-			TextItem "Brutal Doom Options", "b", "BrutalMenu"
-			TextItem "Load Game", "l", "LoadGameMenu"
-			TextItem "Save Game", "s", "SaveGameMenu"
-			TextItem "Credits", "c", "BrutalCreditsMenu"
-		}
-		ifOption(ReadThis)
-		{
-			TextItem "Read This!","r", "ReadThisMenu"
-		}
-		TextItem "Quit Game", "q", "QuitMenu"
-	}
-	
-	IfGame(Heretic, Hexen)
-	{
-		TextItem "$MNU_NEWGAME", "n", "PlayerclassMenu"
-		TextItem "$MNU_OPTIONS", "o", "OptionsMenu"/////////////////////
-		TextItem "Brutal Doom Options", "b", "BrutalMenu"
-		TextItem "Credits", "c", "BrutalCreditsMenu"
-		TextItem "$MNU_GAMEFILES", "g", "GameFilesMenu"
-		TextItem "$MNU_INFO", "i", "ReadThisMenu"
-		TextItem "$MNU_QUITGAME", "q", "QuitMenu"
-	}
+	StaticText " "
+	Submenu "Brutal Doom Options", "BrutalMenu"
 }
 
 ListMenu "PlayerclassMenu"
@@ -82,6 +18,7 @@ OptionMenu "BrutalMenu"
 	Submenu "BD Level Options",			"BrutalDoomOptionsLevel"
 	Submenu "BD Doom Gameplay Options",			"BrutalDoomOptionsGame"
 	Submenu "BD Player Options",			"BrutalDoomOptionsPlayer"
+	Submenu "BD Credits", "BrutalCreditsMenu"
 	StaticText " "
 	Command "Go to Weapons Testing Map",			"map test"
 }
@@ -148,36 +85,9 @@ OptionMenu "BrutalDoomOptionsLevel"
    StaticText "All changes made here will take effect on next level"
    StaticText "or when you start a new game."
    StaticText " "
-   
-  Option "Vanilla Monsters", "bd_classicmonsters", "YesOrNo"
-  StaticText "Disables new enemy AI and new attacks."
-  StaticText " "
-  
-  Option "Advanced Decorative Objects", "bd_disabledecorations", "DisabledOption"
-  StaticText "Fancy particle effects for torches and lamps."
-  StaticText " "
-  
-  Option "Level Enhancement System", "bd_disablemapenhancements", "DisabledOption"
-  StaticText "Improves several maps with better textures,"
-  StaticText  "new decorations and sometimes new enemies."
-  StaticText " "
-  
-  
-   Option "Level Enhancement System - Disable Voxels", "bd_voxeldec", "YesorNoFalse"
-  StaticText "Disable voxel decorations to prevent crashes on Android."
-  StaticText " "
-  
-  Option "New Weapons", "bd_disablenewguns", "DisabledOption"
-  StaticText "Selects if the new weapons should be spawned or not."
-  StaticText "(Submachinegun, Assault Shotgun, Railgun, etc.)"
-  StaticText " "
-  
-  Option "New Enemies", "bd_disablenewenemies", "DisabledOption"
+
   Option "Footstep Sounds", "bd_footstepsounds", "YesOrNo"
   Option "Spawn Demon Spheres", "bd_disabledemonspheres", "YesOrNoFalse"
- // StaticText "Following CVARs still doesn't works:"
-  //Option "Cruelty Bonuses", "bd_disablecrueltybonus", "DisabledOption"
- // Option "Bloody Screen Effects", "bd_disablebloodyscreen", "DisabledOption"
   Option "Rescuable Marines", "bd_disablefriendlymarines", "YesOrNoFalse"
   Option "Rocket Ammo is shootable", "bd_shootablerocketammo", "YesOrNo"
 }

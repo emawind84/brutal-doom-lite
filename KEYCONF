@@ -88,10 +88,10 @@ setslot 9 HandGrenades Flamethrower2 FlameCannon
 
    addmenukey "Roll Left" roleft
    alias roleft "puke 306"
-   defaultbind ZZ roleft
+   defaultbind Z roleft
    
    
    addmenukey "Roll Right" roright
    alias roright "puke 307"
-   defaultbind CC roright
+   defaultbind C roright
    

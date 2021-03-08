@@ -517,9 +517,9 @@ ACTOR DeadDeadStick: DeadStick Replaces DeadStick
 	DropItem "ArmorShardNoCount" 128
 	DropItem "ArmorShardNoCount" 128
 	DropItem "Stimpack" 128
-	DropItem "Clips" 128
+	DropItem "Clip" 128
 	DropItem "CLIP1Drop" 128
-	DropItem "Shells" 128
+	DropItem "Shell" 128
     bloodtype "DeadBlood"
 	damagefactor "Fire", 0.0
     damagefactor "Blood", 0.0    damagefactor "GreenBlood", 0.0    damagefactor "BlueBlood", 0.0    damagefactor "Taunt", 0.0    damagefactor "KillMe", 0.0  damagefactor "Avoid", 0.0  damagefactor "Taunt", 0.0
@@ -562,8 +562,8 @@ ACTOR DeadLiveStick: LiveStick Replaces LiveStick
 	DropItem "ArmorShardNoCount" 128
 	DropItem "ArmorShardNoCount" 128
 	DropItem "Stimpack" 128
-	DropItem "Clips" 128
-	DropItem "Shells" 128
+	DropItem "Clip" 128
+	DropItem "Shell" 128
 	damagefactor "Fire", 0.0
     damagefactor "Blood", 0.0    damagefactor "GreenBlood", 0.0    damagefactor "BlueBlood", 0.0    damagefactor "Taunt", 0.0    damagefactor "KillMe", 0.0  damagefactor "Avoid", 0.0  damagefactor "Taunt", 0.0
     bloodtype "DeadBlood"

@@ -8,6 +8,7 @@ ACTOR TheCyberdemon: Cyberdemon Replaces Cyberdemon
 	damagefactor "TeleportRemover", 0.0
 	DamageFactor "CauseSplash", 0.0 DamageFactor "CauseObjectsToSplashSlime", 0.0 DamageFactor "CauseObjectsToSplashNukage", 0.0
 	DamageFactor "CauseObjectsToSplashBlood", 0.0 DamageFactor "CauseObjectsToSplashLava", 0.0
+	damagefactor "Head", 2.0
 	+NOICEDEATH
     Health 5000
     damagefactor "Crush", 20.0
@@ -18,9 +19,9 @@ ACTOR TheCyberdemon: Cyberdemon Replaces Cyberdemon
 	Radius 45
 	Height 94
 	+MISSILEMORE
-	+MISSILEEVENMORE
+	//+MISSILEEVENMORE
     +DONTRIP
-    +NORADIUSDMG
+    //+NORADIUSDMG
 	+QUICKTORETALIATE
 	Speed 16
 	FastSpeed 22

@@ -37,7 +37,6 @@ ACTOR BDoomer : Doomer
 	Player.StartItem "IsPlayer", 1
 	Player.StartItem "HandGrenades", 1
 	Player.StartItem "GrenadeAmmo", 2
-	Player.StartItem "LeftRifleAmmo", 31
 	Player.StartItem "NeverSelectedShotgun", 1
 	Player.StartItem "IsNOTTacticalClass", 1
 	DamageFactor "KillMeBot", 0.0
@@ -68,7 +67,6 @@ ACTOR Doomer2 : Doomer
 	Player.StartItem "IsPlayer", 1
 	Player.StartItem "HandGrenades", 1
 	Player.StartItem "GrenadeAmmo", 2
-	Player.StartItem "LeftRifleAmmo", 31
 	Player.StartItem "NeverSelectedShotgun", 1
 	Player.StartItem "IsNOTTacticalClass", 1
 	DamageFactor "KillMeBot", 0.0
@@ -104,7 +102,6 @@ ACTOR TacticalDoomer : Doomer
 	Player.StartItem "RailgunAmmo", 50
 	Player.StartItem "HandGrenades", 1
 	Player.StartItem "GrenadeAmmo", 1
-	Player.StartItem "LeftRifleAmmo", 31
 	Player.StartItem "NeverSelectedShotgun", 1
 	Player.StartItem "AmmoDroper"
 	Species "Marines"

@@ -3785,9 +3785,9 @@ Scale 0.6
 DropItem "HealthPlus" 128
 DropItem "ArmorShard" 128
 DropItem "Stimpack" 128
-DropItem "Clips" 128
+DropItem "Clip" 128
 DropItem "CLIP1Drop" 128
-DropItem "Shells" 128
+//DropItem "Shells" 128
 states
 	{
 	Spawn:

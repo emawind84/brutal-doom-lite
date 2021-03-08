@@ -168,7 +168,7 @@ ACTOR BerserkPack : CustomInventory Replaces Berserk
 	{
 	Spawn:
 		MEDK C 0
-		MEDK C 0 A_SpawnItemEx("EvidenceCheckerbERSERk", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		//MEDK C 0 A_SpawnItemEx("EvidenceCheckerbERSERk", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
 	Spawn1:	
 		TNT1 A 0 A_CheckSight("Spawn2")	
 		MEDK C 2 A_SpawnItem("RedFlareVerySmall",0,10)
@@ -333,10 +333,10 @@ ACTOR DemonRuneMix: CustomInventory
 }
 
 
-actor NightVisionSpawner : RandomSpawner  Replaces InfraRed
-{
-    DropItem "DemonRuneMix"
-    DropItem "NIghtvision"
-	DropItem "Flamethrower2"
-	Tag "Nightvision/Demon Rune/Flamethrower"
-}
+// actor NightVisionSpawner : RandomSpawner  Replaces InfraRed
+// {
+//     DropItem "DemonRuneMix"
+//     DropItem "NIghtvision"
+// 	DropItem "Flamethrower2"
+// 	Tag "Nightvision/Demon Rune/Flamethrower"
+// }
