@@ -5,7 +5,7 @@
 //===========================================================================
 ACTOR Arachnotron2: Arachnotron1 2542
 {
-	//$category "BD Monsters"
+	//$category BD Monsters
 	Scale 1.4
 	Health 1250
 	Obituary "%o was killed by an Ancient Arachnotron."

@@ -132,7 +132,7 @@ damage 0
 //DECORATIONS
 #include FURNITURE.txt
 #include LAMPS.txt
-#include NATURAL.txt
+//#include NATURAL.txt
 #include FIREWORKS.txt
 #include TORCHES.txt
 
@@ -181,9 +181,6 @@ damage 0
 #include FlatDecals.txt
 //#include BrutalChexQuest.txt
 
-
-//MAP ENHANCEMENT SYSTEM
-#include MapSpecificDec.txt
 
 #include HeavyMachinegun.txt
 

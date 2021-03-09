@@ -13,7 +13,7 @@ ACTOR IconOfSin 2550
 	Speed 0
 	PainChance 20
 	Monster
-	//$category "BD Bosses"
+	//$category BD Bosses
 	+BOSS 
 	+FLOORCLIP
 	+NORADIUSDMG

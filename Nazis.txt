@@ -1,6 +1,6 @@
 ACTOR Nazi: WolfensteinSS 2549
 {
-	//$category "BD Monsters"
+	//$category BD Monsters
 	Game Doom
 	Health 50
     GibHealth 35

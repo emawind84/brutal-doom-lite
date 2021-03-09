@@ -11,7 +11,7 @@ ACTOR CyberdemonBoss: TheCyberdemon 2546
 	Height 220
 	Speed 28
 	FastSpeed 32
-	//$category "BD Bosses"
+	//$category BD Bosses
 	painchance "kick", 0
 	mass 5000
 	Tag "Cyberdemon Lord of Deimos"
@@ -222,7 +222,7 @@ ACTOR SuperMastermind: TheSpiderMastermind 2547
 	+NOTARGET
 	MaxStepHeight 64
 	MaxDropOffHeight 64
-	//$category "BD Bosses"
+	//$category BD Bosses
 	Tag "Great Mastermind Invasion Leader"
 	States
 	{

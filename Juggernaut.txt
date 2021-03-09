@@ -1,7 +1,7 @@
 
 ACTOR Juggernaut : Fatso 2545
 {
-	//$category "BD Monsters"
+	//$category BD Monsters
     Scale 1.5
 	Game Doom
     GibHealth 25

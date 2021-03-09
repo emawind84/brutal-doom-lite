@@ -1,6 +1,6 @@
 ACTOR Revolver : BrutalWeapon 5874
 {
-	//$category "Weapons"
+	//$category BD Weapons
 	Weapon.SelectionOrder 1300
 	Weapon.AmmoUse1 0
 	Weapon.AmmoUse2 0

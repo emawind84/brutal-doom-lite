@@ -1,6 +1,6 @@
 Actor Volcabus : Mancubus 2543
 {
-	//$category "BD Monsters"
+	//$category BD Monsters
 	Health 2500
 	Scale 1.5
 	Mass 1000

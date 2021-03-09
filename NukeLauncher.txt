@@ -1,7 +1,7 @@
 
 ACTOR NukeLauncher : BrutalWeapon 7452
 {
-	 //$category "Weapons"
+	 //$category BD Weapons
 	Height 20
 	Weapon.SelectionOrder 100
 	Weapon.AmmoUse 1

@@ -1,7 +1,7 @@
 
 actor Motherdemon 2548
 {
-  //$category "BD Bosses"
+  //$category BD Bosses
   game Doom
   obituary "%o was obliterated by the mother of all demons."
   health 10000
