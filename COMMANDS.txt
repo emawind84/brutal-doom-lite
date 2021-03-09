@@ -322,3 +322,19 @@ Script "GetBerserkEffect" (VOID) NET
  Delay(10);
  FadeTo (255, 0, 0, 0.0, 4.0);
 } 
+
+
+//USE
+script "BDUseInput" ENTER
+{
+   while (TRUE)
+   {
+      int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
+      if (buttons & BT_USE)
+      {
+         GiveInventory("PressedUse", 1);
+      }
+      delay(2);
+      TakeInventory("PressedUse", 1);
+   }
+}
