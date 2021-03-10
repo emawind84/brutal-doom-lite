@@ -1735,6 +1735,7 @@ States
 Actor MaggotSpawner: GoreFlies
 {
 +CLIENTSIDEONLY
++NOINTERACTION
 States
 	{
 	Spawn:
