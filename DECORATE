@@ -132,7 +132,6 @@ damage 0
 //DECORATIONS
 #include FURNITURE.txt
 #include LAMPS.txt
-//#include NATURAL.txt
 #include FIREWORKS.txt
 #include TORCHES.txt
 
