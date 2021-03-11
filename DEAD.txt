@@ -1456,7 +1456,7 @@ ACTOR ColonGibs2 Replaces ColonGibs
 		
 	Spawn:
 		POB1 A 0
-		POB1 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
+		//POB1 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 		POB1 A 1
 		
 	Stay:
@@ -1486,7 +1486,7 @@ ACTOR SmallBloodPool2 Replaces SmallBloodPool
 		
 	Spawn:
 		POB2 A 0
-		POB2 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
+		//POB2 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 		POB2 A 1
 		
 	Stay:
@@ -1642,6 +1642,7 @@ Actor GoreFlies
 Health 1
 radius 1
 height 1
+damagefactor "KillMe", 0.0 damagefactor "Trample", 0.0
 States
 	{
 	Spawn:

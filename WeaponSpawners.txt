@@ -799,7 +799,7 @@ ACTOR RailgunSpawner: CustomInventory  2552
  scale 0.8
  radius 24
  height 24
- //$category "Weapons"
+ //$category BD Weapons
  +THRUACTORS +FORCEXYBILLBOARD
  Inventory.PickupSound "PLSDRAW"
  Inventory.PickupMessage "You got the Railgun!"
@@ -977,7 +977,7 @@ ACTOR BFG10KSpawner: CustomInventory 2553
  scale 0.8
  radius 24
  height 24
- //$category "Weapons"
+ //$category BD Weapons
  +THRUACTORS +FORCEXYBILLBOARD
  Inventory.PickupSound "BFGREADY"
  Inventory.PickupMessage "You got the BFG 10K! Holy Shit!"
@@ -1008,7 +1008,7 @@ ACTOR BFG10KSpawner: CustomInventory 2553
 
 ACTOR UnmakerSpawner: CustomInventory 8845
 {
- //$category "Weapons"
+ //$category BD Weapons
  scale 0.8
  radius 24
  height 24
