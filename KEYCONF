@@ -7,7 +7,7 @@ addplayerclass TacticalDoomer
 
 weaponsection "Brutal_Doom"
 
-setslot 1 DSweap BrutalAxe Chain_Saw Melee_Attacks ClassicFist ClassicSaw
+//setslot 1 DSweap BrutalAxe Chain_Saw Melee_Attacks ClassicFist ClassicSaw
 setslot 2 BrutalPistol BrutalSMG ClassicPistol ClassicSMG Revolver2 Revolver MP40 
 setslot 3 AssaultShotgun Shot_Gun SSG ClassicShotgun ClassicSSG
 setslot 4 Machinegun Rifle MiniGun ClassicChaingun HitlersBuzzsaw

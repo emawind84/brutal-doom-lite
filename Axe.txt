@@ -11,6 +11,7 @@ ACTOR BrutalAxe : BrutalWeapon
 	+WEAPON.NOALERT
 	+WEAPON.AXEBLOOD
 	Weapon.SelectionOrder 3000
+	Weapon.SlotNumber 1
 	Scale 0.9
 	Tag "Axe"
 	States

@@ -1,6 +1,7 @@
 Actor Chain_saw : BrutalWeapon
 {
-	weapon.selectionorder 240
+	Weapon.selectionorder 240
+	Weapon.SlotNumber 1
 	Weapon.UpSound "none"
 	weapon.readysound "weapons/chainsaw/idle"
     +WEAPON.NOAUTOAIM

@@ -430,6 +430,7 @@ ACTOR ClassicFist : ClassicWeapon
 {
 	Game Doom
 	Weapon.SelectionOrder 4
+	Weapon.SlotNumber 1
 	Weapon.Kickback 100
 	Obituary "$OB_MPFIST"
 	Tag "$TAG_FIST"
@@ -487,6 +488,7 @@ ACTOR ClassicSaw : ClassicWeapon
 	Game Doom
 	Weapon.Kickback 0
 	Weapon.SelectionOrder 2
+	Weapon.SlotNumber 1
 	Weapon.UpSound "weapons/sawup"
 	Weapon.ReadySound "none"
 	Inventory.PickupMessage "$GOTCHAINSAW"
