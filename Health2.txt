@@ -18,13 +18,13 @@ ACTOR HealthPlus : Health Replaces HealthBonus
 		//BON1 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 	Spawn2:	
         TNT1 A 0 A_CheckSight ("Spawn3")
-		BON1 ABCDCB 2 A_SpawnItem("BlueFlareSmallItem",0,7)
+		BON1 ABCDCB 6 A_SpawnItem("BlueFlareSmallItem",0,7)
 		Loop
 	Spawn3:
 		BON1 A 9
 		Goto Spawn2
 	Vanilla:
-		BON1 ABCDCB 2
+		BON1 ABCDCB 6
 		Loop
 	}
 }
@@ -45,7 +45,7 @@ Actor HealthPlusFatalityBonus : HealthPlus
 	{
 	Spawn:
 		BON1 A 0
-		BON1 ABCDCB 2
+		BON1 ABCDCB 6
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
 		Goto Spawn2
 	}
@@ -178,7 +178,7 @@ Actor ArmorShard : BasicArmorBonus Replaces ArmorBonus
 	States
 	{
 	Spawn:
-		BON2 AAABCDB 2
+		BON2 AAABCDB 6
 		Loop
 	}
 }
@@ -206,7 +206,7 @@ Actor ArmorShardFatalityBonus : ArmorShard
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
 		Goto Spawn2
 	Spawn2:
-		BON2 AAABCDB 2
+		BON2 AAABCDB 6
 		Loop
 	}
 }
@@ -235,7 +235,7 @@ Actor ArmorShardDroped : BasicArmorBonus
 	{
 	Spawn:
         //TNT1 A 0 A_CheckSight ("Spawn2")
-		BON2 AAABCDB 2 //A_SpawnItem("GreenFlareSmall",0,7)
+		BON2 AAABCDB 6 //A_SpawnItem("GreenFlareSmall",0,7)
 		Loop
 	Spawn2:
 		BON2 A 9
@@ -319,7 +319,7 @@ ACTOR GiveHealth : Health
 	States
 	{
 	Spawn:
-		BON1 AAABBBCCCDDDCCCBBB 2
+		BON1 AAABBBCCCDDDCCCBBB 6
 		Loop
 	}
 }

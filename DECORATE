@@ -188,3 +188,9 @@ Actor PressedUse : Inventory
 {
     inventory.maxamount 1
 }
+
+Actor Accelerate : Inventory
+{
+inventory.maxamount 1
+}
+
