@@ -83,24 +83,9 @@ script "BDInitialize" enter
 	if (checkinventory("isplayingaspurist") == 1) { TAkeInventory("IsTacticalClass", 1); }
 	
 	if	(GameType () == GAME_NET_COOPERATIVE) 
-		{
+	{
 		ConsoleCommand("compat_clientssendfullbuttoninfo 1");
-		}
-		
-		
-	if	(GetCvar("bd_disablemapenhancements") == 0) 
-	{ 
-	ReplaceTextures("FLOOR5_3", "METAL52");
-	ReplaceTextures("FLOOR5_2", "METAL52");
-	ReplaceTextures("FLAT5", "METAL53");
-	ReplaceTextures("FLOOR0_1", "METAL54");
-	ReplaceTextures("FLOOR0_3", "METAL55");
-	ReplaceTextures("FLOOR3_3", "METAL56");
-	ReplaceTextures("TLITE6_5", "LITGEN7B");
-	ReplaceTextures("TLITE6_6", "LITGEN9C");
-	ReplaceTextures("FLAT2", "FLAT2B");
-	ReplaceTextures("GRNLITE1", "GRNLIT1B");
-	}	
+	}
 	
 
 	//Spawn surviving marines
