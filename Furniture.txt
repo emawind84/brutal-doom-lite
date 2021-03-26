@@ -27,7 +27,7 @@ ACTOR ImpaledSkulls: HeadsOnAStick Replaces HeadsOnAStick
 		
 	Spawn:
 		POL2 A 0
-		//MARN A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
+		MARN A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 		TNT1 A 1
 		
 	Spawn22:
@@ -117,7 +117,7 @@ ACTOR ImpaledHead: HeadOnAStick Replaces HeadOnAStick
 		
 	Spawn:
 		POL4 B 0
-		//TNT1 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
+		TNT1 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 		TNT1 A 1
 	
 	Spawn32:

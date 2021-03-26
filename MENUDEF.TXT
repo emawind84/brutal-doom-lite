@@ -94,10 +94,6 @@ OptionMenu "BrutalDoomOptionsLevel"
   StaticText "Fancy particle effects for torches and lamps."
   StaticText " "
   
-   Option "Level Enhancement System - Disable Voxels", "bd_voxeldec", "YesorNoFalse"
-  StaticText "Disable voxel decorations to prevent crashes on Android."
-  StaticText " "
-  
   Option "New Weapons", "bd_disablenewguns", "DisabledOption"
   StaticText "Selects if the new weapons should be spawned or not."
   StaticText "(Submachinegun, Assault Shotgun, Railgun, etc.)"

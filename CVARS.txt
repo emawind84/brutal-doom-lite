@@ -309,18 +309,6 @@ if	(GetCvar("bd_rocketbackblast") == 0) { SetACtorState(0, "Disappear"); }
 }
 
 
-Script "CheckVoxels" (VOID)
-{
-if	(GetCvar("bd_voxeldec") == 0) { SetACtorState(0, "Disappear"); }
-}
-
-
-
-
-
-
-
-
 
 Script "BD_CheckBloodIntensity" (VOID)
 {
@@ -366,20 +354,11 @@ Script "BD_CheckBloodIntensity" (VOID)
 
 Script "BD_CheckBloodExtra1" (VOID)
 {
-		if	(GetCvar("bd_morebloodmist") >= 1)
-			{
-			SetActorState(0,"AbsurdBlood"); 
-			}
+	if	(GetCvar("bd_morebloodmist") >= 1)
+	{
+		SetActorState(0,"AbsurdBlood"); 
+	}
 }
-
-
-Script "BD_CheckIfLowBlood" (VOID)
-{
-if	(GetCvar("bd_bloodamount") == 1) { SetActorState(0,"Vanish"); }
-if	(GetCvar("bd_bloodamount") == 0) { SetActorState(0,"Vanish"); }
-}
-
-
 
 script "BD_CheckIfOverLiquid" (void) //Water Small Splash
 {
