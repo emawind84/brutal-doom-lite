@@ -52,7 +52,7 @@ ACTOR ExplosiveBarrel1 : ExplosiveBarrel Replaces ExplosiveBarrel
 		
 	Spawn:
 		BARI A 0
-		MARN A 0 ACS_ExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
+		//MARN A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 		TNT1 A 1
 		
 	Stay:
@@ -798,7 +798,7 @@ ACTOR VanillaExplosiveBarrel: ExplosiveBarrel1
 	States
 	{
 	Spawn:
-		BARI ABDEFGHIJKLM 2
+		BARI ABCD 2
 		Loop
 	}
 }
