@@ -3,7 +3,7 @@
 // Spider boss
 //
 //===========================================================================
-ACTOR TheSpiderMastermind Replaces SpiderMastermind
+ACTOR TheSpiderMastermind //Replaces SpiderMastermind
 {
     damagefactor "BFG", 0.2	damagefactor "Desintegrate", 0.4
     damagefactor "HKFT", 0.05

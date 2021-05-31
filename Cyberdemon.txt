@@ -1,4 +1,4 @@
-ACTOR TheCyberdemon: Cyberdemon Replaces Cyberdemon
+ACTOR TheCyberdemon: Cyberdemon //Replaces Cyberdemon
 {
     damagefactor "HKFT", 0.05
 	damagefactor "HKFT", 0.05

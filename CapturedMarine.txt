@@ -1,5 +1,5 @@
 
-Actor CapturedMarine Replaces Blursphere
+Actor CapturedMarine //Replaces Blursphere
 {
 	Radius 24
     Height 48

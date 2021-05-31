@@ -1,4 +1,4 @@
-ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
+ACTOR ShotgunGuy1: ShotgunGuy //Replaces ShotgunGuy
 {
 	Game Doom
 	Health 40
@@ -548,7 +548,6 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 	FallingDie:
 		TNT1 A 0
 		TNT1 A 0 A_Stop
-		TNT1 A 0 A_CustomMissile("BodyCrash1", 10)
 		Goto Getup+9
 		
 	Death.Fall:
@@ -1367,7 +1366,7 @@ Death.Shotgun:
 }
 
 
-Actor DeadShotgunGuy1: CurbstompedMarine Replaces DeadShotgunguy
+Actor DeadShotgunGuy1: CurbstompedMarine //Replaces DeadShotgunguy
 {
     Radius 12
     Height 12
@@ -2246,7 +2245,6 @@ Obituary "%o got punctured by a SMG Zombie."
 	FallingDie:
 		TNT1 A 0
 		TNT1 A 0 A_Stop
-		TNT1 A 0 A_CustomMissile("BodyCrash1", 10)
 		Goto Getup+8
 		
 	Death.Fall:

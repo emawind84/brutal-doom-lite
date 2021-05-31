@@ -1,4 +1,4 @@
-ACTOR ChaingunGuy1: ChaingunGuy Replaces ChaingunGuy
+ACTOR ChaingunGuy1: ChaingunGuy //Replaces ChaingunGuy
 {
 	Health 80
 	Radius 16

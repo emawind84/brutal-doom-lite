@@ -1,4 +1,4 @@
-ACTOR Cacodemon_ : Cacodemon Replaces Cacodemon
+ACTOR Cacodemon_ : Cacodemon //Replaces Cacodemon
 {
 	Game Doom
 	bloodtype "Blue_Blood", "BlueSawBlood", "BlueSawBlood"
@@ -510,7 +510,7 @@ Death.Massacre:
 // Cacodemon plasma ball
 //
 //===========================================================================
-ACTOR CacodemonBall_ Replaces CacodemonBall
+ACTOR CacodemonBall_ //Replaces CacodemonBall
 {
 	Game Doom
 	SpawnID 126
@@ -828,7 +828,7 @@ ACTOR HalfCacodemon
 }
 
 
-Actor DeadCacoDemon1: CurbstompedMarine Replaces DeadCacodemon
+Actor DeadCacoDemon1: CurbstompedMarine //Replaces DeadCacodemon
 {
     Radius 12
     Height 24

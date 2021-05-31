@@ -1,5 +1,5 @@
 
-ACTOR PrePlacedMarine Replaces MarinePistol
+ACTOR PrePlacedMarine //Replaces MarinePistol
 {
 MONSTER
 Height 56
@@ -96,12 +96,12 @@ ACTOR RandomMarine: RedTorch
     }
 }
 
-ACTOR Marine_Fist: PrePlacedMarine Replaces MarineFist
+ACTOR Marine_Fist: PrePlacedMarine //Replaces MarineFist
 {
 Health 100
 }
 
-ACTOR Marine_SSG: PrePlacedMarine Replaces MarineSSG
+ACTOR Marine_SSG: PrePlacedMarine //Replaces MarineSSG
 {
 Health 100
 }

@@ -1,4 +1,4 @@
-ACTOR Revenant1: Revenant Replaces Revenant
+ACTOR Revenant1: Revenant //Replaces Revenant
 {
 	GibHealth 45
 	Health 300
@@ -777,7 +777,7 @@ ACTOR RoamingLegs
 	}
 }
 
-ACTOR revenantseekermissiles Replaces RevenantTracer
+ACTOR revenantseekermissiles //Replaces RevenantTracer
 {
 	Game Doom
 	SpawnID 53
@@ -912,24 +912,6 @@ States
 	TNT1 A 0 A_SpawnItem ("XDeadSkeleton", 1)
 	Stop
 	}}
-
-Actor NotDeadSkeleton: DeadSkeleton
-{Health 50 
-damagefactor "Kick", 50.0
--THRUACTORS
--CORPSE
-Radius 1
-States{Spawn:
-		SKEL Q 500
-		SKEL PONML 5
-		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_fall
-        TNT1 A 0 A_SpawnItem ("Revenant1", 3)
-		TNT1 A 1
-		TNT1 A 0 A_SpawnItem("KillMe")
-		Stop
-		}}
-
 
 Actor DeadSkeletonNoHead: DeadSkeleton
 {Health 200 

@@ -1,4 +1,4 @@
-ACTOR HellKnight2 : HellKnight Replaces HellKnight
+ACTOR HellKnight2 : HellKnight //Replaces HellKnight
 {
     Scale 1.0
     Speed 8
@@ -673,7 +673,7 @@ Death.ExplosiveImpact:
 	}
 }  
 
-ACTOR GreenPlasmaBall: BaronBall Replaces BaronBall
+ACTOR GreenPlasmaBall: BaronBall //Replaces BaronBall
 {
 	Radius 10
 	Height 16

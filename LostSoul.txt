@@ -27,7 +27,7 @@ damage 0
 // Lost Soul
 //
 //===========================================================================
-ACTOR TehLostSoul: LostSoul Replaces LostSoul
+ACTOR TehLostSoul: LostSoul //Replaces LostSoul
 {
 	Game Doom
 	Health 100

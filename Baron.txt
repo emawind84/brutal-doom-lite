@@ -1,5 +1,5 @@
 
-ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
+ACTOR BaronofHell2 : BaronofHell //Replaces BaronofHell
 {
     Scale 1.1
 	damagefactor "Crush", 10.0

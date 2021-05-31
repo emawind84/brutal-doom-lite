@@ -1,5 +1,5 @@
 
-ACTOR PrePlacedMarineBFG Replaces MarineBFG
+ACTOR PrePlacedMarineBFG //Replaces MarineBFG
 {
     States
 	{

@@ -1,4 +1,4 @@
-ACTOR EvilMarine Replaces WolfensteinSS
+ACTOR EvilMarine //Replaces WolfensteinSS
 {
 	MONSTER
 	-COUNTKILL

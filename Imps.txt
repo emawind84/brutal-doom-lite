@@ -4,7 +4,7 @@
 //
 //===========================================================================
 //ACTOR Imp: SwitchableDecoration Replaces DoomImp
-ACTOR Imp Replaces DoomImp
+ACTOR Imp //Replaces DoomImp
 {
 	Game Doom
     Scale 1.04
@@ -531,7 +531,6 @@ Pain.ExplosiveImpact:
 	FallingDie:
 		TNT1 A 0
 		TNT1 A 0 A_Stop
-		TNT1 A 0 A_CustomMissile("BodyCrash1", 10)
 		IZD4 M 10
 		Goto Getup+17
 	
@@ -1334,13 +1333,6 @@ DeathNoGuts:
 	TNT1 A 0
 	Stop
 	
-	Swim:
-	TNT1 A 0
-	TNT1 A 0 A_NoBlocking
-	TNT1 A 0 A_Fall
-	TNT1 A 0 A_SpawnItem("ImpFish")
-	Stop
-	
 	Death.Ice:
 	Death.Freeze:
 	Death.Frost:
@@ -1474,7 +1466,7 @@ ACTOR ImpAttack2: ImpAttack
     Damage (random(10,10))
 }
 
-ACTOR FireBall_ Replaces DoomImpBall
+ACTOR FireBall_ //Replaces DoomImpBall
 {
 	Game Doom
 	DamageType Burn
@@ -1613,7 +1605,7 @@ TNT1 A 0 A_UnSetInvulnerable
 
 
 
-Actor DeadImp: CurbstompedMarine Replaces DeadDoomImp
+Actor DeadImp: CurbstompedMarine //Replaces DeadDoomImp
 {
     Radius 12
     Height 12

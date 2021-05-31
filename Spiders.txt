@@ -1,4 +1,4 @@
-ACTOR Arachnotron1: Arachnotron replaces Arachnotron
+ACTOR Arachnotron1: Arachnotron //replaces Arachnotron
 {
 	Monster
 	+FLOORCLIP

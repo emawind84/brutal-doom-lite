@@ -1,4 +1,4 @@
-ACTOR TehArchvile: Archvile Replaces Archvile
+ACTOR TehArchvile: Archvile //Replaces Archvile
 {
 	Game Doom
 	SpawnID 111
@@ -352,7 +352,7 @@ ACTOR TehArchvile: Archvile Replaces Archvile
 	}
 }
 
-ACTOR ArchvileFire2 Replaces ArchvileFire
+ACTOR ArchvileFire2 //Replaces ArchvileFire
 {
 	Game Doom
     Scale 1.0

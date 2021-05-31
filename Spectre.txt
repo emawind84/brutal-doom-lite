@@ -1,4 +1,4 @@
-ACTOR Spectro: BullDemon Replaces Spectre
+ACTOR Spectro: BullDemon //Replaces Spectre
 {
 	Mass 400
     -FASTER

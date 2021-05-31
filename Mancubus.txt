@@ -1,4 +1,4 @@
-ACTOR Mancubus : Fatso Replaces Fatso
+ACTOR Mancubus : Fatso //Replaces Fatso
 
 {
     Scale 1.1
@@ -561,7 +561,7 @@ Pain.Taunt:
        } 
 } 
 
-ACTOR BigFireBall Replaces Fatshot
+ACTOR BigFireBall //Replaces Fatshot
 {
 	Game Doom
 	SpawnID 153

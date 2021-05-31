@@ -12,7 +12,7 @@ Stop
 }}
 
 
-ACTOR RifleZombie Replaces ZombieMan
+ACTOR RifleZombie //Replaces ZombieMan
 {
 	Game Doom
 	Health 40
@@ -625,7 +625,6 @@ ACTOR RifleZombie Replaces ZombieMan
 	FallingDie:
 	TNT1 A 0
 	TNT1 A 0 A_Stop
-	TNT1 A 0 A_CustomMissile("BodyCrash1", 10)
 	Goto Getup+8
 		
 	Death.Fall:
@@ -1655,7 +1654,7 @@ ACTOR ZombiemanTorso: CurbstompedMarine
     }
 }
 
-Actor DeadZombieman1: CurbstompedMarine Replaces DeadZombieman
+Actor DeadZombieman1: CurbstompedMarine //Replaces DeadZombieman
 {
 	Scale 0.98
 States
