@@ -142,39 +142,20 @@ SCRIPT "BDInitiate" OPEN
 
 Script "BDCHeckJanitor" (VOID)
 {
-if	(GetCvar("bd_lowgraphicsmode") == 1) { GiveInventory("LowGraphicsMode", 1); }
-if	(GetCvar("zdoombrutaljanitor") == 1) { GiveInventory("LowGraphicsMode", 1); }
-if	(GameType () == GAME_NET_DEATHMATCH) { GiveInventory("LowGraphicsMode", 1); }
 }
 
 Script "BDCHeckJanitor2" (VOID)
 {
-if	(GetCvar("bd_infinitecasings") == 0) { GiveInventory("LowGraphicsMode", 1); }
 }
 
 Script "BDCHeckJanitor3" (VOID)//Making limbs not bounce with explosives
 {
-if	(GetCvar("bd_lowgraphicsmode") == 1) { SetActorState(0, "NoColision", 1); }
-if	(GetCvar("zdoombrutaljanitor") == 1) { SetActorState(0, "NoColision", 1); }
 }
 
 
 
 Script "BDCHeckJanitor4" (VOID)
 {
-
-
-
-	if	(GetCvar("isrunningzandronum") == 1)
-	{
-	if	(GetCvar("bd_bloodamount") < 2) { SetActorState(0,"Vanish"); }
-	}
-
-	if	(GetCvar("isrunningzandronum") == 0)
-	{
-	if	(GetCvar("zdoombrutalblood") < 2) { SetActorState(0,"Vanish"); }
-	}
-
 }
 
 Script "BDCHeckClassicMonsters" (VOID)
@@ -257,52 +238,11 @@ if	(GetCvar("bd_rocketbackblast") == 0) { SetACtorState(0, "Disappear"); }
 
 Script "BD_CheckBloodIntensity" (VOID)
 {
-
-	if	(GetCvar("isrunningzandronum") == 1)
-	{
-	if	(GetCvar( "bd_bloodamount") == 0) { SetActorState(0,"LowBlood"); }
-	if	(GetCvar( "bd_bloodamount") == 1) { SetActorState(0,"LowBlood"); }
-	if	(GetCvar( "bd_bloodamount") == 3) { SetActorState(0,"LotsOfBlood"); }
-	if	(GetCvar( "bd_bloodamount") >= 4) { SetActorState(0,"AbsurdBlood"); }
-	}
-
-
-	if	(GetCvar("isrunningzandronum") == 0)
-	{
-	if	(GetCvar("zdoombrutalblood") == 0) { SetActorState(0,"LowBlood"); }
-	if	(GetCvar("zdoombrutalblood") == 1) { SetActorState(0,"LowBlood"); }
-	if	(GetCvar("zdoombrutalblood") == 3) { SetActorState(0,"LotsOfBlood"); }
-	if	(GetCvar("zdoombrutalblood") == 4) { SetActorState(0,"AbsurdBlood"); }
-	}
-
-
-	if	(GetCvar("isrunningzandronum") == 1)
-	{
-		if	(GetCvar("bd_bloodamount") >= 5)
-			{
-			SetActorState(0,"AbsurdBlood"); 
-			GiveInventory("AnimuGore", 1);
-			}
-	}
-
-	if	(GetCvar("isrunningzandronum") == 0)
-	{
-	if	(GetCvar("zdoombrutalblood") >= 5)
-		{
-		SetActorState(0,"AbsurdBlood"); 
-		GiveInventory("AnimuGore", 1);
-		}
-	}
-
 }
 
 
 Script "BD_CheckBloodExtra1" (VOID)
 {
-	if	(GetCvar("bd_morebloodmist") >= 1)
-	{
-		SetActorState(0,"AbsurdBlood"); 
-	}
 }
 
 script "BD_CheckIfOverLiquid" (void) //Water Small Splash

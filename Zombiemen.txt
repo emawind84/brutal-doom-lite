@@ -93,23 +93,11 @@ ACTOR RifleZombie //Replaces ZombieMan
 		TNT1 A 0 A_Jump(140, "ReplacePistol")
 	Goto Stand
 		
-	ReplacePistol:
-		TNT1 A 0 A_ChangeFlag("THRUACTORS", 1)
-		TNT1 A 0 A_ChangeFlag("COUNTKILL", 0)
-		TNT1 A 0 A_SpawnItemEx ("PistolZombie",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION | SXF_TRANSFERAMBUSHFLAG | SXF_TRANSFERPOINTERS ,0, tid)
-		Stop
-		
 	ReplaceRifle:
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 1)
 		TNT1 A 0 A_ChangeFlag("COUNTKILL", 0)
 		TNT1 A 0 A_SpawnItemEx ("RifleZombie",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION | SXF_TRANSFERAMBUSHFLAG | SXF_TRANSFERPOINTERS ,0, tid)
-		Stop	
-		
-	ReplaceAxeman:
-		TNT1 A 0 A_ChangeFlag("THRUACTORS", 1)
-		TNT1 A 0 A_ChangeFlag("COUNTKILL", 0)
-		TNT1 A 0 A_SpawnItemEx ("Labguy",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION | SXF_TRANSFERAMBUSHFLAG | SXF_TRANSFERPOINTERS ,0, tid)
-		Stop	
+		Stop
 		
 	ReplaceVanilla:
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 1)

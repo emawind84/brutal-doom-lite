@@ -43,30 +43,9 @@ OptionMenu "BrutalDoomOptionsPerformance"
    StaticText "All changes made here have immediate effect."
    StaticText " "
 	
-  Option "Please, select engine you are using.", "isrunningzandronum", "SelectEngineType"
-  StaticText "Due the way CVARs works, you must inform the game" 
-  StaticText "if you are a client or a server with this option"
-  StaticText " so you can control settings such as blood amount."
-  StaticText "If you are playing alone, always use 'singleplayer'."
-  StaticText "If you are hosting a server, always use 'multiplayer'."
-  StaticText " "
-  
   Option "Max Wall Decals", "cl_maxdecals", "maxdecals"
   Option "Max Gibs and Blood Pools", "sv_corpsequeuesize", "maxgibs"
   StaticText " "
-  
-
-  Option "Blood Amount (Server/Singleplayer)", "zdoombrutalblood", "BrutalBlood"
-  Option "Blood Amount (Client/Multiplayer)", "bd_bloodamount", "BrutalBlood"
-  StaticText "How much blood you want to see?"
-  StaticText " "
-  Option "Enable Janitor  (Server/Singleplayer)", "zdoombrutaljanitor", "YesOrNo"
-  Option "Enable Janitor (Client/Multiplayer)", "bd_lowgraphicsmode", "YesOrNo"
-  StaticText "Makes gibs disappear after 30 seconds."
-  StaticText " "
-  
-  
-
   
   Option "Spent Casings stays on floor forever", "bd_infinitecasings", "YesOrNo"
   Option "Water Ripple Effects", "bd_disablewaterripples2", "YesOrNoFalse"
@@ -204,14 +183,6 @@ OptionValue "YesOrNoFalse"
 {
 	1, "No"
 	0, "Yes"
-}
-
-
-
-OptionValue "SelectEngineType"
-{
-	1, "Multiplayer"
-	0, "Singleplayer"
 }
 
 OptionValue "genderoption"
