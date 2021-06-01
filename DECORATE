@@ -36,7 +36,7 @@ damage 0
 #include Leg.txt
 #include Frozen.txt
 
-#include EXECUTIONS.txt
+//#include EXECUTIONS.txt
 
 
 //MISC
@@ -163,7 +163,7 @@ damage 0
 #include Grenades.txt
 #include VanillaMonsters.txt
 #include DyingGuys.txt
-#include LastStandMonsters.txt
+//#include LastStandMonsters.txt
 //#include SpecialDoom1Bosses.txt
 //#include CapturedMarine.txt
 //#include ChaingunMarine.txt
