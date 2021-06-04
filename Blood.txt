@@ -16,9 +16,9 @@ actor SawBlood : AxeBlood //Replaces AxeBlood
 
 //Dummy actor just to replace the bloodpuff made by projectiles
 actor BloodSPlatterReplacer : BloodSplatter //Replaces BloodSplatter
-{ speed 4}
+{}
 actor BrainBlood : Brutal_Blood
-{ speed 4}
+{}
 
 
 //Base flying blood actor. Leaves bloodspots on the floor
