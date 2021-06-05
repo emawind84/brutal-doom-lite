@@ -152,6 +152,12 @@ Decal GreenBloodSplat
 //An actor that will spawn multiple arterial blood actors
 ACTOR GreenArterialBloodSpray
 {
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		stop
+	}
 }
 
 
@@ -238,6 +244,12 @@ Decal GreenBloodGiant
 //Spawns giant blood decals all around the area. Used in Green Doom's BFG deaths.
 Actor GreenBloodSplinter
 {
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		stop
+	}
 }
 
 
