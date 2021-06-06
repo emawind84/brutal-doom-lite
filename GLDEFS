@@ -53,17 +53,6 @@ object Candelabra1
     frame CBRA { light BIGREDTORCHNOSELF }
 }
 
-object BDECGasPipe
-{
-    frame TNT1{ light BIGREDTORCHNOSELF }
-}
-
-object BDECTorch
-{
-    frame TORC { light BIGREDTORCH }
-}
-
-
 
 
 object BurningZombie
@@ -217,88 +206,6 @@ object ExplosiveBarrel1
 
 
 
-pointlight BDECCEILLAMP
-{
-    color 0.9 0.9 1.0
-    size 64
-    offset 0 -32 0
-}
-
-
-pointlight BDECCEILLAMPLong
-{
-    color 0.9 0.9 1.0
-    size 80
-    offset 0 -70 0
-}
-
-pointlight BDECCEILLAMPLong2
-{
-    color 0.9 0.9 1.0
-    size 140
-    offset 0 -120 0
-}
-
-object BDECCAgedLight
-{
-    frame CAGEA  { light BDECCEILLAMP    }
-}
-
-
-object BDECIndustrialLamp
-{
-    frame CAGEC  { light BDECCEILLAMPlong    }
-}
-
-object BDECIndustrialLamp2
-{
-    frame CAGEC  { light BDECCEILLAMPlong2    }
-}
-
-
-
-
-pointlight BDECComputerLight1
-{
-    color 0.0 1.0 0.0
-    size 48
-    offset 0 64 0
-}
-
-pointlight BDECComputerLight2
-{
-    color 0.0 1.0 0.0
-    size 32
-    offset 0 32 0
-}
-
-pulselight BDECComputerLight3
-{
-    color 1.0 1.0 1.0
-    size 32
-    secondarySize 34
-    interval 0.1
-	offset 0 64 0
-}
-
-
-object BDECComputerLight1
-{
-    frame TNT1  { light BDECComputerLight1    }
-}
-
-object BDECComputerLight2
-{
-    frame TNT1  { light BDECComputerLight2    }
-}
-
-object BDECComputerLight3
-{
-    frame TNT1  { light BDECComputerLight3    }
-}
-
-
-
 
 // Floor lamp
 pointlight LAMP
@@ -339,12 +246,6 @@ object TechLamp21
     frame TLP2C { light SMALLLAMP }
     frame TLP2D { light SMALLLAMP }
 }
-
-object BDECLightPost
-{
-    frame SPDC { light SMALLLAMP }
-}
-
 
 
 // Tall tech lamp
@@ -509,17 +410,6 @@ pulselight FIREBARREL
 object BurningBarrel1
 {
     frame BURB { light FIREBARREL }
-}
-
-
-object BDECBurningPillar
-{
-    frame COL4 { light FIREBARREL }
-}
-
-object BDECburningtires
-{
-    frame SPDC { light FIREBARREL }
 }
 
 
@@ -1549,36 +1439,6 @@ pOINTlight BIGWHITELAMP3
     offset 0 -120 0
 }
 
-object BDECcagedlight2
-{
-frame SPDEF { light BIGORANGELAMP }
-}
-
-
-object BDECcagedlight
-{
-frame SPDEF { light BIGORANGELAMP }
-}
-
-
-
-object BDECCeilLampLong
-{
-frame SPDEH { light BIGWHITELAMP2 }
-}
-
-object BDECCeilLampLong2
-{
-frame SPDEH { light BIGWHITELAMP3 }
-}
-
-
-
-object BDECCeilLamp
-{
-frame SPDEG { light BIGWHITELAMP2 }
-}
-
 
 pointlight ALARMORANGELAMP
 {
@@ -1588,200 +1448,6 @@ pointlight ALARMORANGELAMP
 }
 
  
-object BDECAlarm
-{
-    frame SPDE { light ALARMORANGELAMP }
-}
-
-
-
-
-pointlight BDECRedLightWall1L
-{
-    color 1.0 0.0 0.0
-    size 16
-    offset 0 0 0
-}
-
- 
-object BDECRedLightWall1
-{
-    frame LIBD { light BDECRedLightWall1L }
-}
-
-
-
-
-pointlight BDECBlueLightWall1L
-{
-    color 0.0 0.0 1.0
-    size 16
-    offset 0 0 0
-}
-
- 
-object BDECBlueLightWall1
-{
-    frame LIBD { light BDECBlueLightWall1L }
-}
-
-
-
-pointlight BDECBlueLightBig
-{
-    color 0.0 0.0 1.0
-    size 64
-    offset 0 0 0
-}
-
- 
-object BDECBlueLight
-{
-    frame TNT1 { light BDECBlueLightBig }
-}
-
-
-
-
-pointlight BDECRedLightBig
-{
-    color 1.0 0.0 0.0
-    size 64
-    offset 0 0 0
-}
-
- 
-object BDECRedLight
-{
-    frame TNT1 { light BDECRedLightBig }
-}
-
-
-pointlight BDECYellowLightBig
-{
-    color 1.0 1.0 0.0
-    size 64
-    offset 0 0 0
-}
-
- 
-object BDECYellowLight
-{
-    frame TNT1 { light BDECYellowLightBig }
-}
-
-
-
-pointlight BDECYellowLightWall1L
-{
-    color 1.0 1.0 0.0
-    size 16
-    offset 0 0 0
-}
-
- 
-object BDECYellowLightWall1
-{
-    frame LIBD { light BDECYellowLightWall1L }
-}
-
-
-
-pointlight BDECWhiteLightWall1L
-{
-    color 1.0 1.0 1.0
-    size 16
-    offset 0 0 0
-}
-
- 
-object BDECWhiteLightWall1
-{
-    frame LIBD { light BDECWhiteLightWall1L }
-}
-
-
-pointlight BDECAdditiveRedLight
-{
-    color 1.0 0.0 0.0
-    size 64
-    offset 0 0 0
-	subtractive 1
-}
-
-pointlight BDECAdditiveRedSmall
-{
-    color 1.0 0.0 0.0
-    size 16
-    offset 0 0 0
-	subtractive 1
-}
-
-
-pointlight BDECAdditiveRedLightLarge
-{
-    color 1.0 0.0 0.0
-    size 160
-    offset 0 0 0
-	subtractive 1
-}
-
-object BDECAddRedLight
-{
-    frame TNT1 { light BDECAdditiveRedLight }
-}
-
-object SmallRedLightBtmm
-{
-    frame XXX1 { light BDECAdditiveRedSmall }
-}
-
-
-object BDECAddRedLightLArge
-{
-    frame TNT1 { light BDECAdditiveRedLightLarge }
-}
-
-
-
-pointlight BDECAdditiveBlueLight
-{
-    color 0.0 0.0 1.0
-    size 80
-    offset 0 0 0
-	subtractive 1
-}
-
-object BDECAddBlueLight
-{
-    frame TNT1 { light BDECAdditiveBlueLight }
-}
-
-pointlight BDECAdditiveBlueLightLarge
-{
-    color 0.0 0.0 2.0
-    size 160
-    offset 0 0 0
-	subtractive 1
-}
-
-object BDECAddBlueLightLarge
-{
-    frame TNT1 { light BDECAdditiveBlueLightLarge }
-}
-
-object BigShaftOrange1
-{
-	frame XXX1 { light BDECOrangeLightShaft }
-}
-
-pointlight BDECOrangeLightShaft
-{
-    color 0.3 0.1 0.0
-    size 32
-	offset 0 0 -64
-}
-
 
 pointlight CannonFireLight
 {
@@ -1796,23 +1462,6 @@ object AutocannonMuzzle2
 {
 	frame PLMZ { light CannonFireLight }
 }
-
-
-
-pointlight BDECBottomlessPit
-{
-    color 1.0 1.0 1.0
-    size 900
-    offset 0 0 0
-	subtractive 1
-}
-
-
-object PlutoniaBottomlessPit
-{
-	frame TNT1 { light BDECBottomlessPit }
-}
-
 
 
 object HDFlamesGFX1Slim
