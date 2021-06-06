@@ -336,13 +336,6 @@ object Plasma_Ball
     frame PBAL { light PLASMABALLSMALL }
 }
 
-
-object EnemyPlasmaBall
-{
-    frame TNT1 { light PLASMABALL }
-    frame PBAL { light PLASMABALLSMALL }
-}
-
 // Small red torch
 pulselight SMALLREDTORCH
 {
@@ -618,24 +611,9 @@ object RifleZombie
     frame POSRF { light ZOMBIEATK }
 }
 
-object PistolZombie
-{
-    frame PSPOF { light ZOMBIEATK }
-}
-
 object ShotgunGuy1
 {
     frame SPOSF { light ZOMBIEATK }
-}
-
-object TehArchvile
-{
-    frame DIABF { light ZOMBIEATK }
-}
-
-object TehArchvile
-{
-    frame DIABE { light ZOMBIEATK }
 }
 
 // Doom Imp Fireball
@@ -718,17 +696,6 @@ flickerlight CACOBALL_X3
     chance 0.25
 }
 
-object CacodemonBall_
-{
-    frame BAL2A { light CACOBALL }
-    frame BAL2B { light CACOBALL }
-
-    frame BAL2C { light CACOBALL_X1 }
-    frame BAL2D { light CACOBALL_X2 }
-	frame BAL2E { light CACOBALL_X2 }
-    frame BAL2F { light CACOBALL_X3 }
-}
-
 // Baron / Hell Knight fireball
 pointlight BARONBALL
 {
@@ -758,19 +725,6 @@ flickerlight BARONBALL_X3
     size 112
     secondarySize 120
     chance 0.25
-}
-
-object GreenPlasmaBall
-{
-    frame FRPGJ { light BARONBALL    }
-    frame FRPGK { light BARONBALL    }
-
-    frame FRPGC { light BARONBALL_X1 }
-    frame FRPGD { light BARONBALL_X1 }
-    frame FRPGE { light BARONBALL_X2 }
-    frame FRPGF { light BARONBALL_X2 }
-    frame FRPGG { light BARONBALL_X3 }
-    frame FRPGH { light BARONBALL_X3 }
 }
 
 // Lost Soul
