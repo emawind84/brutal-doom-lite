@@ -3,28 +3,22 @@
 
 //Hit puff actor
 
-actor Brutal_Blood //Replaces Blood
+actor Brutal_Blood : Blood //Replaces Blood
 {
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		stop
-	}
 }
 
 
 //Dummy actor just to replace the bloodpuff made by Hexen axe
-actor SawBlood : Brutal_Blood //Replaces AxeBlood
+actor SawBlood : AxeBlood //Replaces AxeBlood
 {
 }
 
 
 //Dummy actor just to replace the bloodpuff made by projectiles
-actor BloodSPlatterReplacer : Brutal_Blood //Replaces BloodSplatter
-{ speed 4}
+actor BloodSPlatterReplacer : BloodSplatter //Replaces BloodSplatter
+{}
 actor BrainBlood : Brutal_Blood
-{ speed 4}
+{}
 
 
 //Base flying blood actor. Leaves bloodspots on the floor

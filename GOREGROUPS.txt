@@ -43,12 +43,7 @@ ACTOR KnightXDeath
 
 ACTOR BaronXDeath: KnightXDeath
 {
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		stop
-	}
+
 }
 
 ACTOR CyberXDeath

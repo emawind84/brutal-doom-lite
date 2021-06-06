@@ -104,18 +104,6 @@ ACTOR BlueWaterBloodCHecker: WaterBloodCHecker
 //muddy water bloodspot actor
 ACTOR BlueWaterBloodSpot: WaterBloodSpot
 {
-Renderstyle Shaded
-StencilColor "0 00 55"
-Decal BlueBloodSplat
- states
- {
-	Spawn:
-		BPDL E 1 A_FadeOut(0.9)
-		BPDL EEEEEEEEEEEEEEEEEEEE 4 A_FadeIn(0.02)
-		BPDL E 100
-		BPDL EEEEEEEEEEEEEEEEEEEE 4 A_FadeOut(0.02)
-		Stop
- }
 }
 
 //bigger bloodsplat 
@@ -191,6 +179,12 @@ Decal BlueBloodSplat
 //An actor that will spawn multiple arterial blood actors
 ACTOR BlueArterialBloodSpray
 {
+	states
+	{
+	Spawn:
+		TNT1 A 0
+		stop
+	}
 }
 
 
