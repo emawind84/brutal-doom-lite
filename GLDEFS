@@ -297,7 +297,7 @@ pulselight BIGREDTORCH128
 
 object TallTorch_Red
 {
-    frame TTRB { light BIGREDTORCH }
+    frame TRED { light BIGREDTORCH }
 }
 
 // Tall green torch
@@ -312,7 +312,7 @@ pulselight BIGGREENTORCH
 
 object TallTorch_Green
 {
-    frame TTRB { light BIGGREENTORCH }
+    frame TGRN { light BIGGREENTORCH }
 }
 
 // Tall blue torch
@@ -327,7 +327,7 @@ pulselight BIGBLUETORCH
 
 object TallTorch_Blue
 {
-    frame TTRB { light BIGBLUETORCH }
+    frame TBLU { light BIGBLUETORCH }
 }
 
 object Plasma_Ball
@@ -355,7 +355,7 @@ pulselight SMALLREDTORCH
 
 object ShortTorch_Red
 {
-    frame STRB { light SMALLREDTORCH }
+    frame SMRT { light SMALLREDTORCH }
 }
 
 
@@ -377,7 +377,7 @@ pulselight SMALLGREENTORCH
 
 object ShortTorch_Green
 {
-    frame STRB { light SMALLGREENTORCH }
+    frame SMGT { light SMALLGREENTORCH }
 }
 
 // Small blue torch
@@ -392,7 +392,7 @@ pulselight SMALLBLUETORCH
 
 object ShortTorch_Blue
 {
-    frame STRB { light SMALLBLUETORCH }
+    frame SMBT { light SMALLBLUETORCH }
 }
 
 // Burning barrel
@@ -409,7 +409,7 @@ pulselight FIREBARREL
 
 object BurningBarrel1
 {
-    frame BURB { light FIREBARREL }
+    frame FCAN { light FIREBARREL }
 }
 
 
