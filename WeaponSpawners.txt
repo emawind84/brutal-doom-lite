@@ -24,17 +24,18 @@ ACTOR RifleSpawner: CustomInventory Replaces Pistol
     States
     {
 
-	 Spawn:
+	Spawn:
 		RIFL A 0
 		TNT1 A 1
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0
+		//TNT1 A 0 A_GiveInventory("IsPlayingAsPurist", 1)
 	Stay:
-		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("FakeClipSprite")
-		TNT1 A 0 A_SpawnItem("FakeRifleSprite")
-		TNT1 A 2
-		Loop
+		TNT1 A 0 A_JumpIfInventory("IsPlayingAsPurist", 1, "StayPurist")
+		RIFL A -1
+		Stop
+	StayPurist:
+		CLIP A -1
+		Stop
 	Pickup:
 	    TNT1 A 0
 		TNT1 A 0 A_JumpIfInventory("IsPlayingAsPurist", 1, "Purist")
@@ -152,8 +153,8 @@ ACTOR MP40Spawner: CustomInventory
 		TNT1 A 0
 	Stay:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("FakeClipSprite")
-		TNT1 A 0 A_SpawnItem("FakeMP40Sprite")
+		//TNT1 A 0 A_SpawnItem("FakeClipSprite")
+		//TNT1 A 0 A_SpawnItem("FakeMP40Sprite")
 		TNT1 A 2
 		Loop
 	Pickup:
@@ -210,8 +211,8 @@ ACTOR ShotgunSpawner: CustomInventory Replaces Shotgun
 		SHTC A 0
 		SHTC A 2
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0 A_SpawnItem("FakeOldSGSprite")
-		TNT1 A 0 A_SpawnItem("FakeNewSGSprite")
+		//TNT1 A 0 A_SpawnItem("FakeOldSGSprite")
+		//TNT1 A 0 A_SpawnItem("FakeNewSGSprite")
 		Loop
 	Pickup:
 	    TNT1 A 0
@@ -236,8 +237,8 @@ ACTOR ShotgunSpawnerDroped: ShotgunSpawner
 		TNT1 A 0
 		SHTC A 2
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0 A_SpawnItem("FakeOldSGSprite")
-		TNT1 A 0 A_SpawnItem("FakeNewSGSprite")
+		//TNT1 A 0 A_SpawnItem("FakeOldSGSprite")
+		//TNT1 A 0 A_SpawnItem("FakeNewSGSprite")
 		Loop
 	Pickup:
 	    TNT1 A 0
@@ -367,8 +368,8 @@ ACTOR ChaingunSpawner: CustomInventory
 		TNT1 A 0
 	Stay:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("FakeChaingunSprite")
-		TNT1 A 0 A_SpawnItem("FakeMinigunSprite")
+		//TNT1 A 0 A_SpawnItem("FakeChaingunSprite")
+		//TNT1 A 0 A_SpawnItem("FakeMinigunSprite")
 		TNT1 A 2
 		Loop
 	Pickup:
@@ -547,8 +548,8 @@ ACTOR DropedChaingunSpawner: ChaingunSpawner
 		TNT1 A 0
 	Stay:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("FakeChaingunSprite")
-		TNT1 A 0 A_SpawnItem("FakeMinigunSprite")
+		//TNT1 A 0 A_SpawnItem("FakeChaingunSprite")
+		//TNT1 A 0 A_SpawnItem("FakeMinigunSprite")
 		TNT1 A 2
 		Loop
 	Pickup:
@@ -582,18 +583,18 @@ ACTOR RocketLauncherSpawner : CustomInventory
 		TNT1 A 0
 		TNT1 A 10
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0
+		TNT1 A 0 A_JumpIfInventory("IsPlayingAsPurist", 1, "PuristStay")
 	Stay:
-		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("FakeRocketLauncherSprite")
-		TNT1 A 0 A_SpawnItem("FakeRL2Sprite")
-		TNT1 A 2
-		Loop
+		RLAU A -1
+		Stop
 	Pickup:
 	    TNT1 A 0
 		TNT1 A 0 A_JumpIfInventory("IsPlayingAsPurist", 1, "Purist")
 		TNT1 A 0 A_GiveInventory("AmmoRocket", 2)
 		TNT1 A 0 A_GiveInventory("Rocket_Launcher", 1)
+		Stop
+	PuristStay:
+		RLAU B -1
 		Stop
 	Purist:
 		TNT1 A 0
@@ -621,18 +622,18 @@ ACTOR GrenadeLauncherSpawner: CustomInventory 2551
 		GLAP A 0
 		GLAP A 10
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0
+		TNT1 A 0 A_JumpIfInventory("IsPlayingAsPurist", 1, "PuristStay")
 	Stay:
-		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("FakeRocketLauncherSprite")
-		TNT1 A 0 A_SpawnItem("FakeGLSprite")
-		TNT1 A 2
-		Loop
+		GLAP A -1
+		Stop
 	Pickup:
 	    TNT1 A 0
 		TNT1 A 0 A_JumpIfInventory("IsPlayingAsPurist", 1, "Purist")
 		TNT1 A 0 A_GiveInventory("GrenadeLauncher", 1)
 		TNT1 A 0 A_GiveInventory("AmmoRocket", 2)
+		Stop
+	PuristStay:
+		RLAU B -1
 		Stop
 	Purist:
 	    TNT1 A 0 A_GiveInventory("ClassicRocketLauncher", 1)
@@ -682,7 +683,7 @@ ACTOR FakeRocketLauncherSprite: RifleSpawner
 	 Spawn:
 		LAUN A 0
 		RLAU B 2
-		Stop
+		Loop
     }
 }
 
@@ -699,7 +700,7 @@ ACTOR FakeRL2Sprite: RifleSpawner
 	 Spawn:
 		LAUN A 0
 		RLAU A 2
-		Stop
+		Loop
     }
 }
 
@@ -716,7 +717,7 @@ ACTOR FakeGLSprite: RifleSpawner
 	 Spawn:
 		GLAP A 0
 		GLAP A 2
-		Stop
+		Loop
     }
 }
 
@@ -811,8 +812,8 @@ ACTOR RailgunSpawner: CustomInventory  2552
 		SRCG A 0
 		SRCG A 2
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0 A_SpawnItem("FakePlasmagunSprite")
-		TNT1 A 0 A_SpawnItem("FakeRailgunSprite")
+		//TNT1 A 0 A_SpawnItem("FakePlasmagunSprite")
+		//TNT1 A 0 A_SpawnItem("FakeRailgunSprite")
 		Loop
 	Pickup:
 	    TNT1 A 0
@@ -955,8 +956,8 @@ ACTOR BFG9000Spawner: CustomInventory
 		TNT1 A 0
 		TNT1 A 2
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0 A_SpawnItem("FakeBFGSprite")
-		TNT1 A 0 A_SpawnItem("FakeOldBFGSprite")
+		//TNT1 A 0 A_SpawnItem("FakeBFGSprite")
+		//TNT1 A 0 A_SpawnItem("FakeOldBFGSprite")
 		Loop
 	Pickup:
 	    TNT1 A 0
@@ -989,8 +990,8 @@ ACTOR BFG10KSpawner: CustomInventory 2553
 		BFG2 A 0
 		TNT1 A 2
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0 A_SpawnItem("FakeBFG10KSprite")
-		TNT1 A 0 A_SpawnItem("FakeOldBFGSprite")
+		//TNT1 A 0 A_SpawnItem("FakeBFG10KSprite")
+		//TNT1 A 0 A_SpawnItem("FakeOldBFGSprite")
 		Loop
 	Pickup:
 	    TNT1 A 0
@@ -1024,8 +1025,8 @@ ACTOR UnmakerSpawner: CustomInventory 8845
 		UNHW A 0
 		TNT1 A 2
 		TNT1 A 0 A_ChangeFlag("THRUACTORS", 0)
-		TNT1 A 0 A_SpawnItem("FakeUnmakerSprite")
-		TNT1 A 0 A_SpawnItem("FakeOldBFGSprite")
+		//TNT1 A 0 A_SpawnItem("FakeUnmakerSprite")
+		//TNT1 A 0 A_SpawnItem("FakeOldBFGSprite")
 		Loop
 	Pickup:
 	    TNT1 A 0
