@@ -104,7 +104,7 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 	Stand:
 		TNT1 A 0
 		TNT1 A 0 A_CheckSight("Stand2")
-		TNT1 AA 0 A_SpawnItem ("HeadshotTarget20", 4, 44,0)
+//		TNT1 AA 0 A_SpawnItem ("HeadshotTarget20", 4, 44,0)
 		SHID AB 11 A_Look
 		Loop
 		
@@ -116,25 +116,25 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 	FallBack:
 	TNT1 A 0 A_CheckSight("Advance")
 	TNT1 A 0 A_ChangeFLag("NODROPOFF", 1)
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	SPOS D 2 A_FaceTarget
 	SPOS D 2 A_Recoil(2)
 	TNT1 A 0 A_jump(64, "Missile")
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	SPOS C 2 A_FaceTarget
 	SPOS C 2 A_Recoil(2)
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	SPOS B 2 A_FaceTarget
 	SPOS B 2 A_Recoil(2)
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	SPOS A 2 A_FaceTarget
 	SPOS A 2 A_Recoil(2)
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	SPOS D 2 A_FaceTarget
 	TNT1 A 0 A_ChangeFLag("NODROPOFF", 0)
 	GOto Missile
@@ -147,54 +147,54 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 	    TNT1 A 0 A_ClearTarget
 	    TNT1 A 0 A_TakeInventory("EnemyMemory", 30)
 		TNT1 A 0 A_GiveInventory("SKShotgunGUy", 1)
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID A 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID C 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID A 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID D 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID A 10 A_Look
 		
 		SPOS A 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		SPOS B 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		SPOS C 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		SPOS D 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		
 		TNT1 A 0 A_Jump(128, "Idle")
 		SPOS A 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		SPOS B 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		SPOS C 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		SPOS D 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		Loop
@@ -218,20 +218,20 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 		TNT1 A 0 A_TakeInventory("SKShotgunGuy", 1)
 		
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS AAA 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS BBB 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS CCC 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS DDD 2 A_Chase
 		
 		
@@ -245,24 +245,24 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
         //TNT1 A 0 A_SpawnItemEx("FootSep", 0, 0, 10, 0, 0)
 		
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS AAA 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS BBB 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS CCC 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS DDD 2 A_Chase
 		Loop		
 		
 	Missile:
 	    TNT1 A 0 A_Stop
 		TNT1 A 0 A_TakeInventory("EnemyMemory", 10)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
 		TNT1 A 0 A_ChangeFLag("NODROPOFF", 0)
 		TNT1 A 0 A_TakeInventory("SKShotgunGuy", 1)
 		
@@ -272,20 +272,20 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 		SPOS D 3 A_FaceTarget
 		//TNT1 A 0 A_JumpIfInventory("CantFire",1, "Advance")
 		
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		TNT1 A 0 A_GiveInventory("SergeantAmmo", 1)
 		
 		SPOS D 3 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS E 10 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
 		SPOS E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
 		SPOS E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
 		SPOS E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
         
 		//TNT1 A 0 A_SetPitch(random (-8, 8) + pitch)
         TNT1 AAAAA 0 A_CustomMissile("ShotgunguyTracer", 36, 0, random(-7, 7), 1, random(-4, 4))
@@ -295,18 +295,18 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 		SPOS F 5 BRIGHT //A_CustomBulletAttack(8, 8, 10, 3, "HitPuff")
 		TNT1 A 0 A_Recoil(1)
 		SPSR C 6
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS E 7 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPSR A 7
         TNT1 A 0 A_PlaySound("weapons/sgpump")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPSR B 7 A_SpawnItem ("ShotCaseSpawn", 0, 30,0)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPSR A 7
         TNT1 A 0 A_JumpIfInventory("SergeantAmmo", 6, "Reload")
 		TNT1 A 0 A_JumpIfInTargetInventory("IsInvisible", 1, "SearchForPlayer")
@@ -314,49 +314,49 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 
   Reload:
         TNT1 A 0
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
         SPSR A 15
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
         ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
         ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
         ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
         ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
 		ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
 		ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
 		SPSR A 10
         TNT1 A 0 A_PlaySound("weapons/sgpump")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
 		SPSR B 10
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
 		SPSR A 10
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
         Goto SeeContinue
 		
 
@@ -367,11 +367,11 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 	Pain:
         TNT1 A 0 A_JumpIfInventory ("IsDown", 1, 9)
 		TNT1 A 0 A_TakeInventory("SKShotgunGuy", 1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS G 3
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SPOS G 3 A_Pain
 		TNT1 A 0 A_Jump(196, "Missile")
 		Goto SeeContinue
@@ -383,12 +383,12 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 	Pain.Head:
 	Pain.Shrapnel:	
 		TNT1 A 0 A_TakeInventory("SKShotgunguy", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 0, 40,0)
 		POSH K 5 A_Pain
 		TNT1 A 0 A_FaceTarget
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 4, 35,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 4, 35,0)
 		POSH L 20
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 4, 35,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 4, 35,0)
 		POSH L 20
 		Goto SeeContinue	
 		
@@ -396,9 +396,9 @@ ACTOR ShotgunGuy1: ShotgunGuy Replaces ShotgunGuy
 	    TNT1 A 0
 		TNT1 A 0 A_JumpIfInventory ("SKShotgunGuy", 1, "GotoStealthKill")
         TNT1 A 0 A_JumpIfInventory ("IsDown", 1, 6)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
 		SPOS G 4
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
 		SPOS G 4 A_Pain
 		Goto SeeContinue
         TNT1 AAAAA 0
@@ -1518,7 +1518,7 @@ States{Spawn:
 		TNT1 A 0 A_JumpIf(momy < 0, "LayDown")
 		TNT1 A 0 A_JumpIf(momx > 0, "LayDown")
 		TNT1 A 0 A_JumpIf(momy > 0, "LayDown")
-		TNT1 A 0 A_SpawnItemEx("HeadshotTarget20", 0, 0, 22)
+//		TNT1 A 0 A_SpawnItemEx("HeadshotTarget20", 0, 0, 22)
 		BR93 A 16
         Loop  
 	LayDown:
@@ -1834,7 +1834,7 @@ Obituary "%o got punctured by a SMG Zombie."
 	Stand:
 		TNT1 A 0
 		TNT1 A 0 A_CheckSight("Stand2")
-		TNT1 AA 0 A_SpawnItem ("HeadshotTarget20", 4, 44,0)
+//		TNT1 AA 0 A_SpawnItem ("HeadshotTarget20", 4, 44,0)
 		SHID AB 11 A_Look
 		Loop
 		
@@ -1846,25 +1846,25 @@ Obituary "%o got punctured by a SMG Zombie."
 	FallBack:
 	TNT1 A 0 A_CheckSight("Advance")
 	TNT1 A 0 A_ChangeFLag("NODROPOFF", 1)
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	PSS3 D 2 A_FaceTarget
 	PSS3 D 2 A_Recoil(2)
 	TNT1 A 0 A_jump(64, "Missile")
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	PSS3 C 2 A_FaceTarget
 	PSS3 C 2 A_Recoil(2)
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	PSS3 B 2 A_FaceTarget
 	PSS3 B 2 A_Recoil(2)
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	PSS3 A 2 A_FaceTarget
 	PSS3 A 2 A_Recoil(2)
-	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
-	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
+//	TNT1 A 0 A_SpawnItem ("HeadshotTarget4", -5, 40,0)
+//	TNT1 A 0 A_SpawnItem ("LegTarget4", 10)
 	PSS3 D 2 A_FaceTarget
 	TNT1 A 0 A_ChangeFLag("NODROPOFF", 0)
 	GOto Missile
@@ -1877,54 +1877,54 @@ Obituary "%o got punctured by a SMG Zombie."
 	    TNT1 A 0 A_ClearTarget
 	    TNT1 A 0 A_TakeInventory("EnemyMemory", 30)
 		TNT1 A 0 A_GiveInventory("SKShotgunGUy", 1)
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID A 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID C 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID A 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID D 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		SHID A 10 A_Look
 		
 		PSS3 A 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		PSS3 B 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		PSS3 C 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		PSS3 D 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		
 		TNT1 A 0 A_Jump(128, "Idle")
 		PSS3 A 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		PSS3 B 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		PSS3 C 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		PSS3 D 4 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 5, 40,0)
 		TNT1 A 0 A_Wander
 		
 		Loop
@@ -1948,20 +1948,20 @@ Obituary "%o got punctured by a SMG Zombie."
 		TNT1 A 0 A_TakeInventory("SKShotgunGuy", 1)
 		
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 AAA 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 BBB 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 CCC 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 DDD 2 A_Chase
 		
 		
@@ -1975,17 +1975,17 @@ Obituary "%o got punctured by a SMG Zombie."
         //TNT1 A 0 A_SpawnItemEx("FootSep", 0, 0, 10, 0, 0)
 		
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 AAA 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 BBB 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 CCC 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6", 10, 44,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 DDD 2 A_Chase
 		Loop		
 		
@@ -1993,7 +1993,7 @@ Obituary "%o got punctured by a SMG Zombie."
 	    TNT1 A 0 A_Stop
 		TNT1 A 0 A_JumpIfHealthLower(1, "Death")
 		TNT1 A 0 A_TakeInventory("EnemyMemory", 10)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
 		TNT1 A 0 A_ChangeFLag("NODROPOFF", 0)
 		TNT1 A 0 A_TakeInventory("SKShotgunGuy", 1)
 		
@@ -2003,16 +2003,16 @@ Obituary "%o got punctured by a SMG Zombie."
 		PSS3 D 3 A_FaceTarget
 		//TNT1 A 0 A_JumpIfInventory("CantFire",1, "Advance")
 		
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		TNT1 A 0 A_GiveInventory("SergeantAmmo", 1)
 		
 		PSS3 D 3 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 E 10 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
 		PSS3 E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget20", 0, 40,0)
         
 		TNT1 A 0 A_CustomMissile("ZombieManTracer", 36, 0, random(-7, 7), 1, random(-4, 4))
 		TNT1 A 0 A_SpawnItem ("PistolCaseSpawn", 0, 30,0)
@@ -2049,57 +2049,57 @@ Obituary "%o got punctured by a SMG Zombie."
 		PSS3 F 1 BRIGHT
 		PSS3 E 2 A_FaceTarget
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 E 10 A_FaceTarget
 		TNT1 A 0 A_JumpIfInTargetInventory("IsInvisible", 1, "SearchForPlayer")
 		Goto SeeContinue
 
   Reload:
         TNT1 A 0
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
         SPSR A 15
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
         ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
         ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
         ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
         ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
 		ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
 		ID12 EFG 5
         TNT1 A 0 A_PlaySound("insertshell")
 		TNT1 A 0 A_TakeInventory("SergeantAmmo", 1)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
 		SPSR A 10
         TNT1 A 0 A_PlaySound("weapons/sgpump")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTarget20", 10)
 		SPSR B 10
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
 		SPSR A 10
-		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget10", 0, 40,0)
         Goto SeeContinue
 		
 
@@ -2110,11 +2110,11 @@ Obituary "%o got punctured by a SMG Zombie."
 	Pain:
         TNT1 A 0 A_JumpIfInventory ("IsDown", 1, 9)
 		TNT1 A 0 A_TakeInventory("SKShotgunGuy", 1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 G 2
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
-		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem ("LegTargetBase", 10)
 		PSS3 G 2 A_Pain
 		TNT1 A 0 A_Jump(196, "Missile")
 		Goto SeeContinue
@@ -2127,9 +2127,9 @@ Obituary "%o got punctured by a SMG Zombie."
 	    TNT1 A 0
 		TNT1 A 0 A_JumpIfInventory ("SKShotgunGuy", 1, "GotoStealthKill")
         TNT1 A 0 A_JumpIfInventory ("IsDown", 1, 6)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
 		PSS3 G 4
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4", 0, 40,0)
 		PSS3 G 4 A_Pain
 		Goto SeeContinue
         TNT1 AAAAA 0

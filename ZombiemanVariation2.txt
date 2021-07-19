@@ -22,50 +22,50 @@ seesound "none"
 	    TNT1 A 0 A_ClearTarget
 	    TNT1 A 0 A_TakeInventory("EnemyMemory", 30)
 		TNT1 A 0 A_GiveInventory("SKZombieMan", 1)
-        //TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
-		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
+//        //TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
+//		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
 		PONH A 10 A_Look
-        //TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
-		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
+//        //TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
+//		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
 		PONH A 10 A_Look
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
-		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
+//		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
 		PONH A 10 A_Look
-        //TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
-		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
+//        //TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
+//		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
 		PONH A 10 A_Look
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
-		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
+//		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
 		PONH A 10 A_Look
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
-		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
+//		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
 		PONH A 10 A_Look
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
-		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget10", 10, 44,0)
+//		TNT1 A 0 //A_SpawnItem ("LegTargetBase", 10)
 		PONH A 10 A_Look
 		
 	StartSearching:	
 		PONH A 2 A_Look
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 10, 44,0)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 10, 44,0)
 		TNT1 A 0 A_Wander
 		PONH A 2 A_Look
 		TNT1 A 0 A_Wander
 		
 		PONH B 2 A_Look
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 10, 44,0)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 10, 44,0)
 		TNT1 A 0 A_Wander
 		PONH B 2 A_Look
 		TNT1 A 0 A_Wander
 		
 		
 		PONH C 2 A_Look
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 10, 44,0)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 10, 44,0)
 		TNT1 A 0 A_Wander
 		PONH C 2 A_Look
 		TNT1 A 0 A_Wander
 		
 		PONH D 2 A_Look
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 10, 44,0)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget4", 10, 44,0)
 		TNT1 A 0 A_Wander
 		PONH D 2 A_Look
 		TNT1 A 0 A_Wander
@@ -148,8 +148,8 @@ seesound "none"
 		TNT1 A 0 A_TakeInventory("EnemyMemory", 10)
 		
         //TNT1 A 0 A_Jump(8, "Grenade")
-		//TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
-		TNT1 A 0 //A_SpawnItem ("LegTarget20", 10)
+//		//TNT1 A 0 A_SpawnItem ("HeadshotTarget20", 0, 40,0)
+//		TNT1 A 0 //A_SpawnItem ("LegTarget20", 10)
 		
 		//TNT1 A 0 A_TakeInventory("CantFire", 1)
 		//TNT1 A 0 A_CustomMissile("MonsterTargetCheck", 34, 0, 0, 0) 
