@@ -34,44 +34,44 @@ ACTOR CyberdemonBoss: TheCyberdemon 2546
 		TNT1 A 0 A_GiveInventory("TargetIsACyberdemon")
 		
 	Idle:	
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		
         CYBR D 10 A_Look
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
         CYBR Z 10 A_Look
         Loop
 
 	See:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		TNT1 A 0 ACS_ExecuteAlways(621, 0, 0, 0, 0)//Health Bar
 	
 	Chasing:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		TNT1 A 0 A_SpawnItem("HeavyFootSteps32")
 		CYBR A 3 A_Hoof
 		CYBR A 3 //A_Chase
 		TNT1 A 0 A_JumpIfCloser(250, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR AA 2 A_Chase
 		TNT1 A 0 A_JumpIfCloser(250, "Stomp")
         //TNT1 A 0 A_SpawnItemEx("CyberStep",12,-30)
 		CYBR BB 2 A_Chase
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
         CYBR BBC 2 A_Chase
 		TNT1 A 0 A_SpawnItem("HeavyFootSteps32")
 		TNT1 A 0 A_JumpIfCloser(250, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
         CYBR C 2 A_Chase
 		CYBR C 2
 		CYBR C 2 A_Metal
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
         //TNT1 A 0 A_SpawnItemEx("CyberStep",12,30)
 		CYBR D 2 A_Chase
 		CYBR D 2 A_Chase
 		TNT1 A 0 A_JumpIfCloser(250, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR DD 2 A_Chase
 		Loop
 
@@ -79,45 +79,45 @@ ACTOR CyberdemonBoss: TheCyberdemon 2546
 	Missile:
 	    TNT1 A 0 A_JumpIfCloser(250, "Stomp")
 		TNT1 A 0 A_JumpIfInventory("Enraged", 1, "SpecialAttack")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 8 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 6 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,0,0)
 		TNT1 A 0 A_JumpIfCloser(180, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 6 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,-7,0)
 		TNT1 A 0 A_JumpIfCloser(180, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 6 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,7,0)
 		TNT1 A 0 A_JumpIfCloser(180, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 6 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,0,0)
 		TNT1 A 0 A_JumpIfCloser(180, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 6 A_FaceTarget
 		Goto Chasing
 		
 		 
 	Stomp:
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR Z 5 A_FaceTarget
 		TNT1 A 0 A_Recoil(-15)
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 	    CYMA A 7 A_FaceTarget
 		CYBR Z 0 A_FaceTarget
 		TNT1 A 0 A_Recoil(-15)
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		TNT1 A 0 A_CustomMissile("CyberStompBig",10,0,0,0)
 	    CYMA B 7
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYMA B 7
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		Goto Chasing
 	Death:
 		CYBR H 10
@@ -159,32 +159,32 @@ ACTOR CyberdemonBoss: TheCyberdemon 2546
 		Goto Missile
 	
 	SpecialAttack:
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 4 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,0,0)
 		TNT1 A 0 A_JumpIfCloser(180, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 4 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,-7,0)
 		TNT1 A 0 A_JumpIfCloser(180, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 4 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,7,0)
 		TNT1 A 0 A_JumpIfCloser(180, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 4 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,0,0)
 		TNT1 A 0 A_JumpIfCloser(180, "Stomp")
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 4 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,0,0)
 		CYBR E 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
+//		TNT1 A 0 A_SpawnItem("CybersHitBox", 0, 200,0)
 		CYBR F 4 BRIGHT A_CustomMissile("FastCyberBalls",120,-50,0,0)
 		Goto Chasing
 	
@@ -245,36 +245,36 @@ ACTOR SuperMastermind: TheSpiderMastermind 2547
 		
 	Chasing:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID A 2 A_Metal
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID A 2 A_Recoil(-3)
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID B 2 A_Chase
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID B 2 A_Recoil(-3)
 
 
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID C 2 A_Chase
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID C 2 A_Recoil(-3)
 		
 		TNT1 A 0 A_SpawnItemEx("MasterMindStep", 180, 180)
 		TNT1 A 0 A_SpawnItemEx("MasterMindStep", -180, 180)
 		
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID D 2 A_Recoil(-3)
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID D 2 A_Metal
 
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID E 2 A_Recoil(-3)
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID E 2 A_Recoil(-3)
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID F 2 A_Chase
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		
 		TNT1 A 0 A_SpawnItemEx("MasterMindStep", 180, -180)
 		TNT1 A 0 A_SpawnItemEx("MasterMindStep", -180, -180)
@@ -282,25 +282,25 @@ ACTOR SuperMastermind: TheSpiderMastermind 2547
 
 	Missile:
 	    TNT1 A 0 A_TakeInventory ("BrutalCounter2", 500)
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID A 4 A_FaceTarget 
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID A 4 A_FaceTarget 
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID A 4 A_FaceTarget 
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
         SPID H 4 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		TNT1 AAAAAAAAAAAAAAAAA 0
 		
 		
 		TNT1 A 0 A_JumpIfCloser(200, "StopFiring")
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID G 2 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID H 2 BRIGHT A_CustomMissile("SuperMastermindTracer", 124, 0, random(-7, 7), 1, random(-4, 2))
 		TNT1 A 0 A_SpawnItem ("MasterMindCaseSpawn", 0, 60,0)
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		TNT1 A 0 A_GiveInventory ("BrutalCounter2", 1)
 		TNT1 A 0 A_JumpIfInventory ("BrutalCounter2", 40, "StopFiring")
 		
@@ -308,27 +308,27 @@ ACTOR SuperMastermind: TheSpiderMastermind 2547
 		Goto Missile+20
 	
 	StopFiring:
-	TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//	TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 	SPID A 6 A_FaceTarget 
 	Goto Chasing
 	
 		Avoid:
          NULL A 0 A_FaceTarget
          SPID A 6 A_FastChase
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
          NULL A 0 A_FaceTarget
          SPID B 6 A_FastChase
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		 NULL A 0 A_FaceTarget
          SPID C 6 A_FastChase
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
          NULL A 0 A_FaceTarget
          SPID D 6 A_FastChase 
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		 Goto Missile
 		
 	Pain:
-		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
+//		TNT1 A 0 A_SpawnItem("SuperMasterMindHitBox", 0, 144,0)
 		SPID I 4 A_Pain
         Goto Chasing
 

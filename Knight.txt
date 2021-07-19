@@ -41,12 +41,12 @@ ACTOR HellKnight2 : HellKnight Replaces HellKnight
 	States
 	{
 	Melee:
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
         BOS2 E 6 A_FaceTarget
         TNT1 A 0 A_PlaySound("weapons/gswing")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 F 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 G 6 A_CustomMissile("KnightAttack",10,0,0,0)
 TNT1 A 0 A_JumpIfInventory("Curbstomp_Marine", 1, "CurbstompMarine")
 		Goto See2
@@ -63,7 +63,7 @@ ReplaceVanilla:
 	
 	Stand:
 		TNT1 A 0 A_CheckSight("Stand2")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 12, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 12, 56,0)
 		BOS2 BB 5 A_Look
 		Loop
 	
@@ -90,16 +90,16 @@ ReplaceVanilla:
 		TNT1 A 0 A_JumpIfInventory("EnemyMemory", 20, "ForgetTarget")
 		TNT1 A 0 A_GiveInventory("EnemyMemory", 1)
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		BOS2 AAA 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		BOS2 BBb 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		BOS2 CCc 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		BOS2 DDD 2 A_Chase
 		
 		TNT1 A 0 A_JumpIfInTargetInventory("IsInvisible", 1, "ForgetTarget")
@@ -109,25 +109,25 @@ ReplaceVanilla:
 	SeeNeverSeen:
         //TNT1 A 0 A_SpawnItemEx("FootSep", 0, 0, 20, 0, 0)
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 AA 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 AA 2 A_Chase
 		
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 BB 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 BB 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 CC 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 CC 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 DD 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 DD 2 A_Chase
 		TNT1 A 0 A_JumpIfInTargetInventory("IsInvisible", 1, "ForgetTarget")
 		Loop
@@ -145,46 +145,46 @@ ReplaceVanilla:
 	Idle:
 	LookingForPlayer:
 	    TNT1 A 0 A_GiveInventory("SKImp", 1)
-	    TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//	    TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
 		TNT1 A 0 A_SetAngle(angle - 40)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
 		TNT1 A 0 A_SetAngle(angle + 40)
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 18, 56,0)
 		BOS2 B 10 A_Look
 		
 		BOS2 A 0 A_Wander
 		BOS2 AA 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		
 		BOS2 B 0 A_Wander
 		BOS2 BB 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		
 		BOS2 C 0 A_Wander
 		BOS2 CC 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		
 		BOS2 D 0 A_Wander
 		BOS2 DD 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		
 		
 		TNT1 A 0 A_jump(128, "LookingForPlayer")
@@ -193,22 +193,22 @@ ReplaceVanilla:
 		BOS2 A 0 A_Wander
 		BOS2 AA 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		
 		BOS2 B 0 A_Wander
 		BOS2 BB 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		
 		BOS2 C 0 A_Wander
 		BOS2 CC 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		
 		BOS2 D 0 A_Wander
 		BOS2 DD 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 18, 56,0)
 		
 		
 		
@@ -238,7 +238,7 @@ ReplaceVanilla:
 		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMastermind", 1, "CheckRetreat")
 		TNT1 A 0 A_JumpIfInventory("StopKickingMyBallsMotherFucker", 1, "MissileInRage")
 		TNT1 A 0 A_FaceTarget
-		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8b", 18, 4, 56)
+//		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8b", 18, 4, 56)
 			
 		//TNT1 A 0 A_JumpIfInTargetInventory("IsPlayer", 0, 5)
 		//TNT1 A 0 A_TakeInventory("CantFire", 1)
@@ -258,7 +258,7 @@ ReplaceVanilla:
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 64, 30, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 64, 30, random (0, 140), 2, random (0, 160))
 		BOS2 E 2 A_FaceTarget
-		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8b", 18, 4, 56)
+//		TNT1 A 0 A_SpawnItemEx("HeadshotTarget8b", 18, 4, 56)
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 64, 30, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 64, 30, random (0, 140), 2, random (0, 160))
 		BOS2 E 2 A_FaceTarget
@@ -269,15 +269,15 @@ ReplaceVanilla:
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 64, 30, random (0, 140), 2, random (0, 160))
 		BOS2 E 2
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 F 8 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 G 8 A_CustomMissile("BaronBall", 36, 0, 0, 1) 
 		Goto See2
 		
 	MissileInRage:
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		
 		TNT1 A 0 A_TakeInventory("CantFire", 1)
 		TNT1 A 0 A_CustomMissile("MonsterTargetCheck", 34, 0, 0, 0) 
@@ -285,23 +285,23 @@ ReplaceVanilla:
 		BOS2 E 3 A_FaceTarget
 		TNT1 A 0 A_JumpIfInventory("CantFire",1, "SeeContinue")
 		BOS2 E 3 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 F 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 G 6 A_CustomMissile("BaronBall", 36, 0, 0, 1)
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BAS2 E 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BAS2 F 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BAS2 G 6 A_CustomMissile("BaronBall", 36, 0, 0, 1)
 
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 E 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 F 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 18, 56,0)
 		BOS2 G 6 A_CustomMissile("BaronBall", 36, 0, 0, 1)
 		Goto See2
 		
@@ -314,32 +314,32 @@ ReplaceVanilla:
 	TNT1 A 0
         //TNT1 A 0 A_SpawnItemEx("FootSep", 0, 0)
 		TNT1 A 0 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
 		BOS2 DD 2 A_Recoil(2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
 		BOS2 DD 2 A_Recoil(2)
 		TNT1 A 0 A_FaceTarget
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
 		BOS2 CC 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
 		BOS2 CC 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
 		BOS2 BB 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
 		BOS2 BB 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
 		BOS2 AA 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 0, 66,0)
 		BOS2 AA 2 A_Recoil(1)
 		Goto Missile+5
 
 	Pain:
         TNT1 A 0 A_JumpIfInventory("Curbstomp_Marine", 1, "CurbstompMarine")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 	    TNT1 A 0 A_TakeInventory("StopKickingMyBallsMotherFucker", 1)
 		BOS2 H 3
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 H 3 A_Pain
 		Goto See2
 	
@@ -357,7 +357,7 @@ ReplaceVanilla:
 		TNT1 A 0 ThrustThingZ(0,30,0,1)
 		TNT1 A 0 A_Recoil(8)
 		BOS2 H 3
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 18, 56,0)
 		BOS2 H 3 A_Pain
 		TNT1 A 0 A_ChangeFLag("NOPAIN", 0)
 		Goto See2
@@ -1114,32 +1114,32 @@ ACTOR DyingHellKnight1
 	{
 	Spawn:
 	TNT1 A 0 A_FaceTarget
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	
 	TNT1 A 0 A_PlaySound ("PSXDPN")
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	TNT1 A 0 A_PlaySound ("PSXDPN")
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	TNT1 A 0 A_PlaySound ("PSXDPN")
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	TNT1 A 0 A_PlaySound ("PSXDPN")
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	TNT1 A 0 A_PlaySound ("PSXDPN")
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	TNT1 A 0 A_PlaySound ("PSXDPN")
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	TNT1 A 0 A_PlaySound ("PSXDPN")
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	TNT1 A 0 A_PlaySound ("PSXDPN")
-	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
+//	KSA1 ABCB 6 A_SpawnItem("HeadshotTarget4b", 0, 50,0)
 	TNT1 A 0 A_SpawnItem("GreenBloodDying", 0, 50)
 	TNT1 A 0 A_PlaySound ("PSXDPN")
 	TNT1 A 0 A_NoBlocking
@@ -1211,18 +1211,18 @@ ACTOR DyingHellKnight2: DyingHellKnight1
 	{
 	Spawn:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 0, 50,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 0, 50,0)
 		BTN5 AABBAACC 2 A_CustomMissile ("Green_LiquidBlood", 62, 0, random (0, 360), 2, random (30, 110))
 		TNT1 A 0 A_Pain
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 0, 50,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 0, 50,0)
 		BTN5 AAABBBAAACCC 2 A_CustomMissile ("Green_LiquidBlood", 62, 0, random (0, 360), 2, random (30, 110))
 		TNT1 A 0 A_Pain
-		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 0, 50,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 0, 50,0)
 		BTN5 AAABBBAAACCC 2 A_CustomMissile ("Green_LiquidBlood", 62, 0, random (0, 360), 2, random (30, 110))
 		TNT1 A 0 A_Pain
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 0, 50,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget20b", 0, 50,0)
 		BTN5 AAABBBAAACCC 2 A_CustomMissile ("Green_LiquidBlood", 62, 0, random (0, 360), 2, random (30, 110))
        Death:
 		TNT1 A 0 A_Scream

@@ -25,7 +25,7 @@ states
 
 	Spawn2:	
 		TNT1 A 0 A_CheckSight ("Spawn3")
-		TRED ABCDABCD 2 BRIGHT A_SpawnItem("RedFlareMedium",0,60)
+		TRED ABCDABCD 2 BRIGHT //A_SpawnItem("RedFlareMedium",0,60)
 		Loop
 
 	Spawn3:
@@ -84,7 +84,7 @@ states
 
 	Spawn2:	
 		TNT1 A 0 A_CheckSight ("Spawn3")
-		TBLU ABCDABCD 2 BRIGHT A_SpawnItem("BlueFlareMedium",0,60)
+		TBLU ABCDABCD 2 BRIGHT //A_SpawnItem("BlueFlareMedium",0,60)
 		Loop
 		
 	Spawn3:
@@ -142,7 +142,7 @@ states
 
 	Spawn2:	
 		TNT1 A 0 A_CheckSight ("Spawn3")
-		TGRN ABCDABCD 2 BRIGHT A_SpawnItem("GreenFlareMedium",0,60)
+		TGRN ABCDABCD 2 BRIGHT //A_SpawnItem("GreenFlareMedium",0,60)
 		Loop
 		
 	Spawn3:
@@ -209,7 +209,7 @@ states
 		
 	Spawn2:	
 		TNT1 A 0 A_CheckSight ("Spawn3")
-		SMBT ABCDABCD 2 BRIGHT A_SpawnItem("BlueFlareSmall",0,35)
+		SMBT ABCDABCD 2 BRIGHT //A_SpawnItem("BlueFlareSmall",0,35)
 		Loop
 		
 	Spawn3:
@@ -269,7 +269,7 @@ states
 
 	Spawn2:	
 		TNT1 A 0 A_CheckSight ("Spawn3")
-		SMRT ABCDABCD 2 BRIGHT A_SpawnItem("RedFlareSmall",0,35)
+		SMRT ABCDABCD 2 BRIGHT //A_SpawnItem("RedFlareSmall",0,35)
 		Loop
 		
 	Spawn3:
@@ -326,7 +326,7 @@ states
 		
 	Spawn2:	
 		TNT1 A 0 A_CheckSight ("Spawn3")
-		SMGT ABCDABCD 2 BRIGHT A_SpawnItem("GreenFlareSmall",0,35)
+		SMGT ABCDABCD 2 BRIGHT //A_SpawnItem("GreenFlareSmall",0,35)
 		Loop
 		
 	Spawn3:
@@ -858,13 +858,13 @@ ACTOR BDECTorch
 		TNT1 A 0 A_Stop
 	Live:	
 		TORC A 2 BRIGHT 
-		TNT1 A 0 A_SpawnItem("YellowFlareSmall", 0, 30)
+		//TNT1 A 0 A_SpawnItem("YellowFlareSmall", 0, 30)
 		TORC B 2 BRIGHT 
-		TNT1 A 0 A_SpawnItem("RedFlareSmall", 0, 30)
+		//TNT1 A 0 A_SpawnItem("RedFlareSmall", 0, 30)
 		TORC C 2 BRIGHT 
-		TNT1 A 0 A_SpawnItem("YellowFlareSmall", 0, 30)
+		//TNT1 A 0 A_SpawnItem("YellowFlareSmall", 0, 30)
 		TORC D 2 BRIGHT 
-		TNT1 A 0 A_SpawnItem("RedFlareSmall", 0, 30)
+		//TNT1 A 0 A_SpawnItem("RedFlareSmall", 0, 30)
 		Loop
 	}
 }
