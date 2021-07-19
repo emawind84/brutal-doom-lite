@@ -1084,7 +1084,7 @@ ACTOR ClassicPlasmaBall
 	    TNT1 A 1
 		Goto Spawn2
 	Spawn2:
-		PLSS ABAB 1 Bright A_SpawnItem("BlueFlareSmall")
+		PLSS ABAB 1 Bright //A_SpawnItem("BlueFlareSmall")
 		Loop
 	Death:
 	    TNT1 A 0
