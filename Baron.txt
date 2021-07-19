@@ -92,7 +92,7 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 	Stand:
 		TNT1 A 0
 		TNT1 A 0 A_CheckSight("Stand2")
-		BTS3 A 0 A_SpawnItem("HeadshotTarget20b", 14, 66,0)
+//		BTS3 A 0 A_SpawnItem("HeadshotTarget20b", 14, 66,0)
 		BARO BB 10 A_Look
 		Loop
 		
@@ -103,11 +103,11 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		BARO A 0
 		//TNT1 A 0 A_CheckSight("SeeNeverSeen")
 		TNT1 A 0 A_JumpIfInventory("HasExplosiveBarrel", 1, "MissileBarrel")
-	    TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//	    TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO A 1
         BTS3 ABC 1 
 		TNT1 A 0 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		BTS3 D 4
 		BTS3 CBA 1
 		TNT1 A 0 HealThing(200)
@@ -129,16 +129,16 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		BARO A 0 A_CheckSight("SEE3")
 		BARO AA 2 A_Chase
         //TNT1 A 0 A_SpawnItemEx("FootSep", 0, 0)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		BARO AAA 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		BARO BBB 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		BARO CCC 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		BARO DDD 2 A_Chase
 		
 
@@ -152,24 +152,24 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		BARO A 0 A_CheckSight("SEE3")
 		BARO AA 2 A_Chase
         //TNT1 A 0 A_SpawnItemEx("FootSep", 0, 0)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO AA 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO AA 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO B 4 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO BB 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		//TNT1 A 0 A_SpawnItemEx("FootSep", 0, 0)
 		BARO CC 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO CC 2 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO DD 2 A_Chase
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO DD 2 A_Chase
 		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsACyberdemon", 1, "CheckRetreat")
 		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMastermind", 1, "CheckRetreat")
@@ -183,46 +183,46 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 	Idle:
 	LookingForPlayer:
 	    TNT1 A 0 A_GiveInventory("SKImp", 1)
-	    TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//	    TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
 		TNT1 A 0 A_SetAngle(angle - 40)
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
 		TNT1 A 0 A_SetAngle(angle + 40)
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
-		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
-        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
+//        TNT1 A 0 A_SpawnItem ("HeadshotTarget10b", 20, 66,0)
 		BARO B 10 A_Look
 		
 		BARO A 0 A_Wander
 		BARO AA 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		
 		BARO B 0 A_Wander
 		BARO BB 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		
 		BARO C 0 A_Wander
 		BARO CC 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		
 		BARO D 0 A_Wander
 		BARO DD 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		
 		
 		TNT1 A 0 A_jump(128, "LookingForPlayer")
@@ -231,22 +231,22 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		BARO A 0 A_Wander
 		BARO AA 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		
 		BARO B 0 A_Wander
 		BARO BB 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		
 		BARO C 0 A_Wander
 		BARO CC 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		
 		BARO D 0 A_Wander
 		BARO DD 2 A_Look
 		TNT1 A 0 A_Recoil(-2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget6b", 20, 66,0)
 		
 		
 		
@@ -264,10 +264,10 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 	RAGE:
         TNT1 A 0
 		TNT1 A 0 A_CheckSight("See")
-        BTS3 ABC 2  A_SpawnItem("HeadshotTarget4b", 20, 66,0)
-		BTS3 DEDF 3  A_SpawnItem("HeadshotTarget8b", 20, 66,0)
-		BTS3 DEDF 3  A_SpawnItem("HeadshotTarget8b", 20, 66,0)
-		BTS3 CBA 2  A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//        BTS3 ABC 2  A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		BTS3 DEDF 3  A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		BTS3 DEDF 3  A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		BTS3 CBA 2  A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		TNT1 A 0 HealThing(200)
 		TNT1 A 0 A_Jump(96, "SpecialAttack")
 		Goto See2
@@ -279,27 +279,27 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		TNT1 A 0 A_JumpIfInTargetInventory("TargetIsAMastermind", 1, "CheckRetreat")
 		TNT1 A 0 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("BaronAttackOnBarrel",10,0,0,0)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO E 1
 		TNT1 A 0 A_JumpIfInventory("HasExplosiveBarrel", 1, "MissileBarrel")
 		
         BARO E 6
         TNT1 A 0 A_PlaySound("weapons/gswing")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO F 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO G 6 A_CustomMissile("BaronAttack",10,0,0,0)
 		TNT1 A 0 A_JumpIfInventory("Curbstomp_Marine", 1, "CurbstompMarine")
 		TNT1 A 0 A_JumpIfInventory("ZombiemanFatality", 1, "FatalityZombieman")		
 		Goto See2
 		
 	Melee2:
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		
 		BARO E 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO F 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO G 6 A_CustomMissile("BaronAttack",10,0,0,0)
 		TNT1 A 0 A_JumpIfInventory("Curbstomp_Marine", 1, "CurbstompMarine")
 		TNT1 A 0 A_JumpIfInventory("ZombiemanFatality", 1, "FatalityZombieman")
@@ -329,26 +329,26 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		//TNT1 A 0 A_JumpIfInventory("CantFire",1, "See4")
 		
 		TNT1 A 0 A_Jump (64, "SpecialAttack")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO E 2 A_FaceTarget
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 78, 40, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 79, 40, random (0, 140), 2, random (0, 160))
 		BARO E 2 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 78, 40, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 79, 40, random (0, 140), 2, random (0, 160))
 		BARO E 2 A_FaceTarget
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 78, 40, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 79, 40, random (0, 140), 2, random (0, 160))
 		BARO E 2 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 78, 40, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 79, 40, random (0, 140), 2, random (0, 160))
 		BARO E 2 A_FaceTarget
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO F 3 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO G 8 A_CustomMissile("BaronBall", 36, 0, 0, 1)
 		//BARO G 8 A_CustomMissile("ThrowedZombieMan2", 36, 0, 0, 1)
 		TNT1 A 0 A_TakeInventory("ComingToGetTheBarrel", 1)
@@ -356,12 +356,12 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		Goto See2
 
     SpecialAttack:
-	    TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//	    TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		
 		BARO R 3 A_FaceTarget
-	    TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//	    TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO Q 6 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		
 		
 		BARO P 2 A_FaceTarget
@@ -379,7 +379,7 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 79, 40, random (0, 140), 2, random (0, 160))
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 78, -40, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 79, -40, random (0, 140), 2, random (0, 160))
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO P 2 A_FaceTarget
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 78, 40, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 79, 40, random (0, 140), 2, random (0, 160))
@@ -387,14 +387,14 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		TNT1 A 0 A_CustomMissile ("BallGettingReadyGreen", 79, -40, random (0, 140), 2, random (0, 160))
 		BARO P 2 A_FaceTarget
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO Q 4 A_FaceTarget
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 58, 30, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 58, -30, random (0, 360), 2, random (70, 110))
 		BARO Q 4 A_FaceTarget
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 48, 30, random (0, 360), 2, random (70, 110))
 		TNT1 A 0 bright A_CustomMissile ("SmallGreenFlameTrails", 48, -30, random (0, 360), 2, random (70, 110))
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		TNT1 A 0 A_CustomMissile("BaronBall", 36, 15, 9, 11) 
 		TNT1 A 0 A_CustomMissile("BaronBall", 36, 15, -9, 11)
 		BARO R 8 A_CustomMissile("BaronBall", 36, 15, 0, 11)
@@ -412,23 +412,23 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		TNT1 A 0
         //TNT1 A 0 A_SpawnItemEx("FootSep", 0, 0)
 		TNT1 A 0 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO DD 2 A_Recoil(2)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO DD 2 A_Recoil(2)
 		TNT1 A 0 A_FaceTarget
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO CC 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO CC 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO BB 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO BB 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO AA 2 A_Recoil(1)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO AA 2 A_Recoil(1)
 		Goto Missile+5
 	
@@ -454,13 +454,13 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		BOBA D 8
 	
 	    ThrowBarrel:
-	    TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//	    TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 	    BARO P 2 A_FaceTarget
 		TNT1 A 0 A_CustomMissile("ThrowedBarrel", 46, 15, 0, 11)
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO Q 4 A_FaceTarget
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO R 8 
 		TNT1 A 0 A_TakeInventory("ComingToGetTheBarrel", 1)
 		TNT1 A 0 A_TakeInventory("HasExplosiveBarrel", 1)
@@ -476,9 +476,9 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 	
 	Pain:
 		TNT1 A 0 A_JumpIfInventory("Curbstomp_Marine", 1, "CurbstompMarine")
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO H  3
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO H  3 A_Pain
 		Goto See2
 	
@@ -553,7 +553,7 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		TNT1 A 0 ThrustThingZ(0,30,0,1)
 		TNT1 A 0 A_Recoil(8)
 		BARO H 3
-		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget4b", 20, 66,0)
 		BARO H 3 A_Pain
 		TNT1 A 0 A_ChangeFLag("NOPAIN", 0)
 		Goto See2
@@ -567,11 +567,11 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
 		TNT1 A 0 A_GiveInventory("StopKickingMyBallsMotherFucker", 1)
 		TNT1 A 0 ThrustThingZ(0,15,0,1)
 		TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
-		BNRJ ABCD 5 A_SpawnItem("HeadshotTarget4b", 14, 56,0)
+//		BNRJ ABCD 5 A_SpawnItem("HeadshotTarget4b", 14, 56,0)
 		TNT1 A 0 A_Pain
-		BNRJ ABCD 5 A_SpawnItem("HeadshotTarget4b", 14, 56,0)
+//		BNRJ ABCD 5 A_SpawnItem("HeadshotTarget4b", 14, 56,0)
 		TNT1 A 0 A_Pain
-		BNRJ ABCD 5 A_SpawnItem("HeadshotTarget4b", 14, 56,0)
+//		BNRJ ABCD 5 A_SpawnItem("HeadshotTarget4b", 14, 56,0)
 		Goto Missile
 		
    Death.ExplosiveImpact:
@@ -836,13 +836,13 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
         TNT1 A 0 A_TakeInventory("ZombieManFatality",1)
         TNT1 A 0 A_ChangeFlag("NOPAIN", 0)
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		3HF1 H 8 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO E 8 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO F 8 A_CustomMissile("ThrowedZombieMan2", 64, 0, 0, 0) 
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO G 8
 		Goto See2
 		
@@ -865,13 +865,13 @@ ACTOR BaronofHell2 : BaronofHell Replaces BaronofHell
         TNT1 A 0 A_TakeInventory("SergeantFatality",1)
         TNT1 A 0 A_ChangeFlag("NOPAIN", 0)
 		
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		3HF1 M 1 A_Chase
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO E 8 A_FaceTarget
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO F 8 A_CustomMissile("ThrowedSergeantPiece", 64, 0, 0, 0) 
-		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
+//		TNT1 A 0 A_SpawnItem("HeadshotTarget8b", 20, 66,0)
 		BARO G 8
         Goto See2
 
@@ -1162,40 +1162,40 @@ ACTOR DyingBaron1
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_PlaySound ("PSXDPN")
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
 		
 		TNT1 A 0 A_PlaySound ("PSXDPN")
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
-		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		TNT1 A 0 A_PlaySound ("PSXDPN")
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
-		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
 		TNT1 A 0 A_PlaySound ("PSXDPN")
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
-		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		TNT1 A 0 A_PlaySound ("PSXDPN")
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
-		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
 		TNT1 A 0 A_PlaySound ("PSXDPN")
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
 		TNT1 A 0 A_PlaySound ("PSXDPN")
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
-		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
+		TNT1 A 0 A_PlaySound ("PSXDPN")
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
+		TNT1 A 0 A_PlaySound ("PSXDPN")
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
+		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
+//		KSA8 BC 6 A_SpawnItem("HeadshotTarget4b", 0, 60,0)
 		TNT1 A 0 A_CustomMissile ("Green_LiquidBlood", 35, 0, random (0, 360), 2, random (30, 110))
 		Goto Death
 	

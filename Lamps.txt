@@ -26,9 +26,9 @@ states
 	Stay:
 		TNT1 A 0 A_CheckSight("Spawn2")
 		TLMP AB 1 bright
-		TNT1 A 0 A_SpawnItemEx("LensFlareAlt", 0, 0, 71)
+		//TNT1 A 0 A_SpawnItemEx("LensFlareAlt", 0, 0, 71)
 		TLMP CD 1 bright
-		TNT1 A 0 A_SpawnItemEx("LensFlareAlt", 0, 0, 71)
+		//TNT1 A 0 A_SpawnItemEx("LensFlareAlt", 0, 0, 71)
 		Loop
 	Spawn2:
 		TLMP ABCD 2 BRIGHT
@@ -71,9 +71,9 @@ states
 	Stay:
 		TNT1 A 0 A_CheckSight("Spawn2")
 		TLP2 AB 1 bright
-		TNT1 A 0 A_SpawnItemEx("LensFlareAlt", 0, 0, 55)
+		//TNT1 A 0 A_SpawnItemEx("LensFlareAlt", 0, 0, 55)
 		TLP2 CD 1 bright
-		TNT1 A 0 A_SpawnItemEx("LensFlareAlt", 0, 0, 55)
+		//TNT1 A 0 A_SpawnItemEx("LensFlareAlt", 0, 0, 55)
 		Loop
 	Spawn2:
 		TLP2 ABCD 2 BRIGHT
@@ -139,7 +139,7 @@ states
 		
 	Stay:
         TNT1 A 0 A_CheckSight("Spawn2")
-		COLU A 4 bright A_SpawnItem("yellowlensflarealtlong",0,44)
+		COLU A 4 bright //A_SpawnItem("yellowlensflarealtlong",0,44)
 		Loop
 	Spawn2:
 	    COLU A 5
