@@ -34,6 +34,7 @@ states
 		TLMP ABCD 2 BRIGHT
 		Goto Stay	
 	Death:
+		TNT1 A 0 A_JumpIfInventory("DecorationDisabled", 1, "Vanilla")
 		TLMP E 1
 		TNT1 AAAA 0 A_CustomMissile ("BDExplosionparticlesSmall", 81, 0, random (0, 180), 2, random (40, 90))
 		TNT1 A 0 A_PlaySound ("DSBOTTLE")
@@ -79,6 +80,7 @@ states
 		TLP2 ABCD 2 BRIGHT
 		Goto Stay
 	Death:
+		TNT1 A 0 A_JumpIfInventory("DecorationDisabled", 1, "Vanilla")
 		TLP2 E 1
 		TNT1 AAAA 0 A_CustomMissile ("BDExplosionparticlesSmall", 51, 0, random (0, 180), 2, random (40, 90))
 		TNT1 A 0 A_PlaySound ("DSBOTTLE")
