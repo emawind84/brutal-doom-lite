@@ -239,14 +239,11 @@ if	(GetCvar("bd_classicmonsters") == 1) { SetActorState(0,"ReplaceVanilla"); }
 
 Script "BDCheckDecorations" (VOID)
 {
-if	(GetCvar("bd_disabledecorations") == 1) { SetActorState(0,"Vanilla"); }
+	if	(GetCvar("bd_disabledecorations") == 1) { 
+		GiveInventory("DecorationDisabled", 1);
+		SetActorState(0,"Vanilla");
+	}
 }
-
-Script "BDDisableMapEnhancements" (VOID)
-{
-if	(GetCvar("bd_disablemapenhancements") == 1) { SetActorState(0,"Vanilla"); }
-}
-
 
 Script "BDDisableNewGuns" (VOID)
 {
