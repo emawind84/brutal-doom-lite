@@ -104,7 +104,7 @@ ACTOR ExplosiveBarrel1 : ExplosiveBarrel Replaces ExplosiveBarrel
 	    TNT1 A 0 A_GiveInventory("GotBloody", 1)
 	    Goto StayBloody
 	StayBloody:
-		BARB AB 4  A_SpawnItem("greenlensflarealtsmall",0,32)
+		BARB AB 4  //A_SpawnItem("greenlensflarealtsmall",0,32)
 		Loop	
 		
     Pain.Kick:
