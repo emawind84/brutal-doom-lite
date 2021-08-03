@@ -472,6 +472,7 @@ states
 	}
 }
 
+Actor BurningBarrelVanilla : BurningBarrel {}
 Actor BurningBarrel1 : BurningBarrel replaces BurningBarrel
 {
 +LOOKALLAROUND
@@ -513,19 +514,9 @@ states
 		
 	Spawn:
 		FCAN A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
 		TNT1 A 0 A_Playsound("BDFireplace", 1, 1, 1)
 		goto Super::Spawn
-		
-	Stay:
-		//TTRB A 0 A_CustomMissile ("RealisticFireSparks1", 44, 0, random (0, 140), 2, random (0, 160))
-		//TNT1 A 0 bright A_CustomMissile ("BurningBarrelTopFIre", 28, 0, random (40, 180), 2, random (50, 130))
-		//BURB ABCBABCB 2
-		FCAN ABC 4 BRIGHT
-		Loop
-
-	Spawn2:
-		BURB A 10
-		Goto Stay
 	
 	Pain.Kick:
 	Death:
@@ -762,25 +753,6 @@ ACTOR CandleVanilla
 		Stop
 	}
 }
-
-
-ACTOR BurningBarrelVanilla
-{
-	Game Doom
-	SpawnID 149
-	Radius 16
-	Height 32
-	ProjectilePassHeight -16
-	+SOLID
-	States
-	{
-	Spawn:
-		FCAN ABC 4 BRIGHT
-		Loop
-	}
-}
-
-
 
 
 
