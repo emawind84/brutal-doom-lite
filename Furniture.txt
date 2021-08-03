@@ -8,6 +8,7 @@ Actor TechPillar1 : TechPillar replaces TechPillar
 Mass 900000
 }
 
+Actor HeadsOnAStickVanilla : HeadsOnAStick {}
 ACTOR ImpaledSkulls: HeadsOnAStick Replaces HeadsOnAStick
 {
 	Radius 16
@@ -21,13 +22,12 @@ ACTOR ImpaledSkulls: HeadsOnAStick Replaces HeadsOnAStick
 	States
 	{
 	Vanilla:
-		POL2 A 1
-		POL2 A -1
-		Stop
+		TNT1 A 1 A_SpawnItemEx("HeadsOnAStickVanilla")
+		stop
 		
 	Spawn:
 		POL2 A 0
-		MARN A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 		TNT1 A 1
 		
 	Spawn22:
@@ -106,18 +106,18 @@ States
     }
 }
 
-
+Actor HeadOnAStickVanilla : HeadOnAStick {}
 ACTOR ImpaledHead: HeadOnAStick Replaces HeadOnAStick
 {
 	States
 	{
 	Vanilla:
-		POL4 A -1
-		Stop
+		TNT1 A 1 A_SpawnItemEx("HeadOnAStickVanilla")
+		stop
 		
 	Spawn:
 		POL4 B 0
-		TNT1 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 		TNT1 A 1
 	
 	Spawn32:

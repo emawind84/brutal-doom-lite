@@ -5,6 +5,7 @@
 //at this dev build, besides PB devs?
 //Go make your own mod, loosers.
 
+Actor DeadMarineVanilla : DeadMarine {}
 actor VeryDeadMarine: DeadMarine Replaces DeadMarine
 {
 damagefactor "Avoid", 0.0
@@ -18,8 +19,12 @@ Radius 0
 	Game Doom
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("DeadMarineVanilla")
+		stop
     Spawn:
 	    TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
 		TNT1 AAAAA 0 A_CustomMissile ("SuperWallRedBlood", 10, 0, random (0, 360), 2, random (5, 40))
 		TNT1 AAAAAA 0 A_SpawnItemEx("Brutal_BloodSpot",random(64, -64),random(64, -64))
 		TNT1 A 0 A_SpawnItem("MediumBloodSpot")
@@ -68,6 +73,7 @@ Radius 0
 	}
 }
 
+Actor GibbedMarineVanilla : GibbedMarine {}
 actor VeryVeryDeadMarine: GibbedMarine Replaces GibbedMarine
 {
 +CLIENTSIDEONLY
@@ -75,11 +81,15 @@ damagefactor "Avoid", 0.0
 	Game Doom
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("GibbedMarineVanilla")
+		stop
     Spawn:
-	TNT1 A 0
-	TNT1 AAAAA 0 A_CustomMissile ("SuperWallRedBlood", 10, 0, random (0, 360), 2, random (5, 40))
-	TNT1 AAAAAAA 0 A_SpawnItemEx("Brutal_BloodSpot",random(64, -64),random(64, -64))
-	TNT1 A 0 A_SpawnItem("MediumBloodSpot")
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
+		TNT1 AAAAA 0 A_CustomMissile ("SuperWallRedBlood", 10, 0, random (0, 360), 2, random (5, 40))
+		TNT1 AAAAAAA 0 A_SpawnItemEx("Brutal_BloodSpot",random(64, -64),random(64, -64))
+		TNT1 A 0 A_SpawnItem("MediumBloodSpot")
 		TNT1 A 0 A_CheckSight("Spawn2")
 		TNT1 A 0 A_Jump(160,2)
 		TNT1 A 1 A_SpawnItem("GibDec")
@@ -114,9 +124,16 @@ damagefactor "Avoid", 0.0
 	}
 }
 
+Actor GibbedMarineExtraVanilla : GibbedMarineExtra {}
 actor VeryVeryDeadMarine2 : VeryVeryDeadMarine Replaces GibbedMarineExtra
 {
 	Game Doom
+	states
+	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("GibbedMarineExtraVanilla")
+		stop
+	}
 }
 
 
@@ -507,9 +524,10 @@ GIBD C 62
 Loop    }}
 // Dead on a stick ---------------
 
+Actor DeadStickVanilla : DeadStick {}
 ACTOR DeadDeadStick: DeadStick Replaces DeadStick
 {
-	Health 200
+	Health 80
 	Mass 99999999
 	Radius 16
 	Height 64
@@ -529,9 +547,13 @@ ACTOR DeadDeadStick: DeadStick Replaces DeadStick
     GibHealth 10
 	States
 	{
-		Spawn:
-		    TNT1 A 0
-			TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("DeadStickVanilla")
+		stop
+	Spawn:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
+		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
 		TNT1 AAAA 0 A_SpawnItem("GoreFlies", 0, random(0, 45))
 	    TNT1 A 0 A_SpawnItem("MediumBloodSpot",0,0)
 		Goto Stand
@@ -550,9 +572,10 @@ ACTOR DeadDeadStick: DeadStick Replaces DeadStick
 
 // Still alive on a stick --------------------------------------------------
 
+Actor LiveStickVanilla : LiveStick {}
 ACTOR DeadLiveStick: LiveStick Replaces LiveStick
 {
-	Health 200
+	Health 80
 	Mass 99999999
 	Radius 16
 	Height 64
@@ -572,8 +595,12 @@ ACTOR DeadLiveStick: LiveStick Replaces LiveStick
     bloodtype "DeadBlood"
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("LiveStickVanilla")
+		stop
 	Spawn:
 		    TNT1 A 0
+			TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
 			Goto Stand
 			TNT1 A 0 A_CHangeFlag("THRUACTORS", 1)
 			TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", 1)
@@ -663,13 +690,16 @@ ACTOR ImpaledMarineAlive1: DeadLiveStick
 {
 Health 20
 Painchance 255
-damagefactor "Fire", 2.0
 height 60
 MONSTER
 +FRIENDLY
 -COUNTKILL
-deathheight 60 DamageFactor "Use", 0 DamageFactor "SSG", 9999.0
-Damagefactor "Melee", 0.1 DamageFactor "Kick", 0.1
+deathheight 60
+damagefactor "Fire", 2.0
+DamageFactor "Use", 0
+DamageFactor "SSG", 9999.0
+Damagefactor "Melee", 0.1
+DamageFactor "Kick", 0.1
 	Health 50
 	States
 	{
@@ -705,7 +735,8 @@ Damagefactor "Melee", 0.1 DamageFactor "Kick", 0.1
 		POLF A 16
 		Goto Stand
 		
-	Death.Fire: Death.Flames:
+	Death.Fire: 
+	Death.Flames:
 		TNT1 A 0
 		TNT1 A 0 A_PlaySound("BIGSCRE")
 		POLF DEDEDEDEDEDE 3 A_SpawnItem("BurnParticles", 0, 20)
@@ -723,8 +754,10 @@ Damagefactor "Melee", 0.1 DamageFactor "Kick", 0.1
 		POLF F -1
 		Stop
 		
-	 Death.Explosives: Death.ExplosiveIMpact:
-	 XDeath: Death.SSG:
+	 Death.Explosives: 
+	 Death.ExplosiveIMpact:
+	 XDeath: 
+	 Death.SSG:
         NULL A 0 A_Takeinventory("Kicking",1)
 		MARN A 0 A_GiveInventory("PlayerIsDead", 1)
 		NULL A 0 ThrustThingZ(0,60,0,1)
@@ -786,7 +819,8 @@ ACTOR ImpaledMarineAlive2: ImpaledMarineAlive1
 		POLF J -1
 		Stop
 		
-	Death.Fire: Death.Flames:
+	Death.Fire: 
+	Death.Flames:
 		TNT1 A 0
 		TNT1 A 0 A_PlaySound("BIGSCRE")
 		POLF KLKLKLKLKLKL 3 A_SpawnItem("BurnParticles", 0, 10)
@@ -826,7 +860,7 @@ Actor ImpaledMarineAlive1c: ImpaledMarineAlive1
 Actor ImpaledMarineAlive1d: ImpaledMarineAlive1
 {translation "112:127=[0,128,192]:[0,0,0]" }
 
-
+Actor BloodyTwitchVanilla : BloodyTwitch {}
 ACTOR DeadBloodyTwitch: BloodyTwitch Replaces BloodyTwitch
 {
 	Radius 16
@@ -849,8 +883,12 @@ ACTOR DeadBloodyTwitch: BloodyTwitch Replaces BloodyTwitch
 	damagefactor "HumanBBQ", 500.0
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("BloodyTwitchVanilla")
+		stop
     Spawn:
 		GOR1 A 1
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
 		TNT1 A 0 Thing_ChangeTID(0,728)
 		GOR1 A 4
 		TNT1 A 0 A_JumpIfInventory("TVRRainVerification", 10, "Replacerain")	
@@ -939,6 +977,7 @@ ACTOR DeadBloodyTwitchC: DeadBloodyTwitchB
 
 // Meat 2 ------------------------------------------------------------------
 
+Actor Meat2Vanilla : Meat2 {}
 ACTOR HangingBody: Meat2 Replaces Meat2
 {
 	Radius 16
@@ -962,8 +1001,12 @@ ACTOR HangingBody: Meat2 Replaces Meat2
 	damagefactor "HumanBBQ", 500.0
 	States
 	{
-		Spawn:
-		    TNT1 A 0
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("Meat2Vanilla")
+		Stop
+	Spawn:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
 		TNT1 AAA 0 A_SpawnItem("GoreFlies", 0, random(0, 45))
@@ -975,20 +1018,18 @@ ACTOR HangingBody: Meat2 Replaces Meat2
         TNT1 A 0 A_SpawnItemEx("DripingBlood", 0, 0, 15, 0, 0)
         loop
     Death:
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_Scream
         TNT1 A 0 A_SpawnItem ("HangingPairOfLegs")
 		TNT1 A 0 A_CustomMissile ("MeatDeath", 0, 0, random (0, 360), 2, random (0, 160))
-    Stop
+		Stop
 	
 	Death.Humanbbq:
-		TNT1 A 0
-		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SpawnItem("HumanBBQ1")
 		Stop
 	}
 }
 
+Actor Meat4Vanilla : Meat4 {}
 ACTOR HangingPairOfLegs: DeadBloodyTwitchB Replaces Meat4
 {
     Health 100
@@ -996,8 +1037,12 @@ ACTOR HangingPairOfLegs: DeadBloodyTwitchB Replaces Meat4
 	damagefactor "HumanBBQ", 500.0
     States
 	{
-		Spawn:
-		    TNT1 A 0
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("Meat4Vanilla")
+		Stop
+	Spawn:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
 		TNT1 AAA 0 A_SpawnItem("GoreFlies", 0, random(0, 45))
@@ -1008,29 +1053,38 @@ ACTOR HangingPairOfLegs: DeadBloodyTwitchB Replaces Meat4
         TNT1 A 0 A_SpawnItemEx("DripingBlood", 0, 0, 15, 0, 0)
         loop
     Death:
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_Scream
         TNT1 A 0 A_SpawnItem ("Meat2C")
 		TNT1 A 0 A_CustomMissile ("MeatDeath", 0, 0, random (0, 360), 2, random (0, 160))
 		Stop
 	Death.Humanbbq:
-		TNT1 A 0
-		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SpawnItem("HumanBBQ1")
 		Stop	
 	}
 }
 
+Actor NonsolidMeat2Vanilla : NonsolidMeat2 {}
 ACTOR NSHangingBody : HangingBody Replaces NonsolidMeat2
 {
 	Game Doom
-
+	states
+	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("NonsolidMeat2Vanilla")
+		stop
+	}
 }
 
+Actor NonsolidMeat4Vanilla : NonsolidMeat4 {}
 ACTOR NSHangingPairOfLegs : HangingPairOfLegs Replaces NonsolidMeat4
 {
 	Game Doom
-
+	states
+	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("NonsolidMeat4Vanilla")
+		stop
+	}
 }
 
 ACTOR Meat2C: DeadBloodyTwitchB
@@ -1047,6 +1101,7 @@ ACTOR Meat2C: DeadBloodyTwitchB
 
 // Meat 3 ------------------------------------------------------------------
 
+Actor Meat3Vanilla : Meat3 {}
 ACTOR HangingDeadGuyNoLeg: Meat3 Replaces Meat3
 {
 	Radius 16
@@ -1068,11 +1123,16 @@ ACTOR HangingDeadGuyNoLeg: Meat3 Replaces Meat3
 	damagefactor "HumanBBQ", 500.0
 	States
 	{
-	
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("Meat3Vanilla")
+		TNT1 A 0 A_Log("#Vanilla")
+		Stop
 	Spawn:
 	    TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
+		TNT1 A 0 A_Log("#BD")
 		TNT1 AAA 0 A_SpawnItem("GoreFlies", 0, random(0, 45))
 		GOR3 A 36
         Goto Stand
@@ -1082,19 +1142,18 @@ ACTOR HangingDeadGuyNoLeg: Meat3 Replaces Meat3
         loop
 
     Death:
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_Scream
         TNT1 A 0 A_SpawnItem ("HangingLeg")
 		TNT1 A 0 A_CustomMissile ("MeatDeath", 0, 0, random (0, 360), 2, random (0, 160))
-    Stop
+		Stop
 	
 	Death.Humanbbq:
-		TNT1 A 0
-		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SpawnItem("HumanBBQ1")
 		Stop
 	}
 }
+
+Actor Meat5Vanilla : Meat5 {}
 ACTOR HangingLeg: DeadBloodyTwitchB Replaces Meat5
 {
 	Radius 16
@@ -1104,8 +1163,12 @@ ACTOR HangingLeg: DeadBloodyTwitchB Replaces Meat5
 	damagefactor "HumanBBQ", 500.0
     States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("Meat5Vanilla")
+		Stop
 	Spawn:
 	    TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
 		TNT1 AA 0 A_SpawnItem("GoreFlies", 0, random(0, 45))
@@ -1145,28 +1208,47 @@ ACTOR Meat3C: DeadBloodyTwitchB
 	}
 }
 
+Actor NonsolidMeat3Vanilla : NonsolidMeat3 {}
 ACTOR NSHangingDeadGuyNoLeg : HangingDeadGuyNoLeg Replaces NonsolidMeat3
 {
 	Game Doom
-
+	states
+	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("NonsolidMeat3Vanilla")
+		stop
+	}
 }
 
+Actor NonsolidMeat5Vanilla : NonsolidMeat5 {}
 ACTOR NSHangingLeg : HangingLeg Replaces NonsolidMeat5
 {
 	Game Doom
-
+	states
+	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("NonsolidMeat5Vanilla")
+		stop
+	}
 }
 
 // Nonsolid bloody twitch --------------------------------------------------
 
+Actor NonsolidTwitchVanilla : NonsolidTwitch {}
 ACTOR DeadNonsolidTwitch : DeadBloodyTwitch Replaces NonsolidTwitch
 {
 	Game Doom
-
+	states
+	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("NonsolidTwitchVanilla")
+		stop
+	}
 }
 
 // Hanging with no guts ----------------------------------------------------
 
+Actor HangNoGutsVanilla : HangNoGuts {}
 ACTOR DeadHangNoGuts: HangNoGuts Replaces HangNoGuts
 {
 	Radius 20
@@ -1184,8 +1266,12 @@ ACTOR DeadHangNoGuts: HangNoGuts Replaces HangNoGuts
 	damagefactor "humanbbq", 500.0
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("HangNoGutsVanilla")
+		stop
     Spawn:
 		HDB1 A 1
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
 		TNT1 AAAAA 0 A_SpawnItem("GoreFlies", 0, random(0, 45))
@@ -1202,11 +1288,9 @@ ACTOR DeadHangNoGuts: HangNoGuts Replaces HangNoGuts
 		TNT1 AAAAAAAAAAA 0 A_CustomMissile ("SpawnedMaggotDec3", random (0, 50), 0, random (0, 360), 2, random (0, 360))
 		TNT1 A 0 A_explode(4, 60)
 		TNT1 A 1 A_NoBlocking
-     Stop
+		Stop
 	 
 	 Death.Humanbbq:
-		TNT1 A 0
-		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SpawnItem("HumanBBQ1")
 		Stop
 	}
@@ -1214,38 +1298,45 @@ ACTOR DeadHangNoGuts: HangNoGuts Replaces HangNoGuts
 
 // Hanging from bottom with no brain ---------------------------------------
 
+Actor HangBNoBrainVanilla : HangBNoBrain {}
 ACTOR DeadHangBNoBrain: DeadHangNoGuts Replaces HangBNoBrain
 {
 	Radius 16
 	Height 88
 	States
 	{
-	
-	 Spawn:
-	    TNT1 A 0
-        TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("HangBNoBrainVanilla")
+		stop
+	Spawn:
+		TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
+		TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
 		TNT1 AAAAA 0 A_SpawnItem("GoreFlies", 0, random(0, 45))
 		HDB2 A 30
-        Goto Stand
+		Goto Stand
 	Stand:
 		HDB2 ABCDABCDABCD 4
-//		TNT1 A 0 A_SpawnItemEX("MaggotSpawner", random(-6, 6), random(-6, 6), random(10, 70))
-        //TNT1 A 0 A_SpawnItemEx("DripingBlood", 0, 0, 15, 0, 0)
-        loop
+		loop
 	}
 }
 
 // Hanging from top, looking down ------------------------------------------
 
+Actor HangTLookingDownVanilla : HangTLookingDown {}
 ACTOR DeadHangTLookingDown: DeadHangNoGuts Replaces HangTLookingDown
 {
 	Radius 16
 	Height 64
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("HangTLookingDownVanilla")
+		stop
 	 Spawn:
 	    TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 25))
 		TNT1 AAAA 0 A_SpawnItem("GoreFlies", 0, random(0, 25))
@@ -1261,14 +1352,19 @@ ACTOR DeadHangTLookingDown: DeadHangNoGuts Replaces HangTLookingDown
 
 // Hanging from top, looking up --------------------------------------------
 
+Actor HangTLookingUpVanilla : HangTLookingUp {}
 ACTOR DeadHangTLookingUp: DeadHangNoGuts Replaces HangTLookingUp
 {
 	Radius 16
 	Height 64
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("HangTLookingUpVanilla")
+		stop
 	Spawn:
 	    TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 25))
 		TNT1 AAAA 0 A_SpawnItem("GoreFlies", 0, random(0, 25))
@@ -1284,14 +1380,19 @@ ACTOR DeadHangTLookingUp: DeadHangNoGuts Replaces HangTLookingUp
 
 // Hanging from top, skully ------------------------------------------------
 
+Actor HangTSkullVanilla : HangTSkull {}
 ACTOR DeadHangTSkull: DeadHangNoGuts replaces HangTSkull
 {
 	Radius 16
 	Height 64
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("HangTSkullVanilla")
+		stop
 	Spawn:
 	    TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 25))
 		TNT1 AAAA 0 A_SpawnItem("GoreFlies", 0, random(0, 25))
@@ -1307,14 +1408,19 @@ ACTOR DeadHangTSkull: DeadHangNoGuts replaces HangTSkull
 
 // Hanging from top without a brain ----------------------------------------
 
+Actor HangTNoBrainVanilla : HangTNoBrain {}
 ACTOR DeadHangTNoBrain: DeadHangNoGuts Replaces HangTNoBrain
 {
 	Radius 16
 	Height 64
     States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("HangTNoBrainVanilla")
+		stop
 	Spawn:
 	    TNT1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 25))
 		TNT1 AAAA 0 A_SpawnItem("GoreFlies", 0, random(0, 25))
@@ -1440,8 +1546,8 @@ ACTOR DyingRevenant
 
 
 
-
-ACTOR ColonGibs2 Replaces ColonGibs
+Actor ColonGibsVanilla : ColonGibs {}
+ACTOR ColonGibs2 replaces ColonGibs
 {
 	Game Doom
 	SpawnID 147
@@ -1452,15 +1558,11 @@ ACTOR ColonGibs2 Replaces ColonGibs
 	States
 	{
 	Vanilla:
-		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 A_SpawnItem("VanillaColonGibs")
-		Stop
-		
+		TNT1 A 1 A_SpawnItemEx("ColonGibsVanilla")
+		stop
 	Spawn:
-		POB1 A 0
-		POB1 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
 		POB1 A 1
-		
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
 	Stay:
 	    POB1 A 8
 	    TNT1 A 0 A_SpawnItem("MediumBloodSpot",0,0)
@@ -1470,7 +1572,7 @@ ACTOR ColonGibs2 Replaces ColonGibs
 }
 
 
-
+Actor SmallBloodPoolVanilla : SmallBloodPool {}
 ACTOR SmallBloodPool2 Replaces SmallBloodPool
 {
 	Game Doom
@@ -1482,15 +1584,11 @@ ACTOR SmallBloodPool2 Replaces SmallBloodPool
 	States
 	{
 	Vanilla:
-		POB2 A 0 A_NoBlocking
-		POB2 A 0 A_SpawnItem("VanillaSmallBloodPool")
-		Stop
-		
+		TNT1 A 1 A_SpawnItemEx("SmallBloodPoolVanilla")
+		stop
 	Spawn:
 		POB2 A 0
-		POB2 A 0 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)//Check if advanced decorations are disabled.
-		POB2 A 1
-		
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
 	Stay:
 	    POB2 A 6
 	    TNT1 A 0 A_SpawnItem("MediumBloodSpot",0,0)
@@ -1499,31 +1597,9 @@ ACTOR SmallBloodPool2 Replaces SmallBloodPool
 	}
 }
 
-
-ACTOR VanillaSmallBloodPool: SmallBloodPool
-{
-	States
-	{
-	Spawn:
-	    POB2 A 1
-		POB2 A -1
-		Stop
-	}
-}
-
-ACTOR VanillaColonGibs: SmallBloodPool
-{
-	States
-	{
-	Spawn:
-	    POB1 A 1
-		POB1 A -1
-		Stop
-	}
-}
-
 // brain stem lying on the ground ------------------------------------------
 
+Actor BrainStemVanilla : BrainStem {}
 ACTOR BrainStem2 Replaces BrainStem
 {
 	Game Doom
@@ -1534,36 +1610,51 @@ ACTOR BrainStem2 Replaces BrainStem
 	+MOVEWITHSECTOR
 	States
 	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("BrainStemVanilla")
+		stop
 	Spawn:
 	    BRS1 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
 	    BRS1 A 0 A_SpawnItem("MediumBloodSpot",0,0)
 		BRS1 A -1
 		Stop
 	}
 }
 
-
+Actor RealGibsVanilla : RealGibs {}
 ACTOR RealGibs2 Replaces RealGibs
 {
-  +DROPOFF
-  +CORPSE
-  +NOTELEPORT
-  +DONTGIB
-  States
-  {
-  Spawn:
-    POL5 A 0
-	POL5 A 0 A_SpawnItem("MediumBloodSpot",0,0)
-    POL5 A -1
-    Stop
-  }
+	+DROPOFF
+	+CORPSE
+	+NOTELEPORT
+	+DONTGIB
+	States
+	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("RealGibsVanilla")
+		stop
+	Spawn:
+		POL5 A 0
+		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
+		POL5 A 0 A_SpawnItem("MediumBloodSpot",0,0)
+		POL5 A -1
+		Stop
+	}
 }
 
+Actor GibsVanilla : Gibs {}
 ACTOR Gibs2 : RealGibs2 Replaces Gibs
 {
-   Game Doom
-   SpawnID 146
-   ClearFlags
+	Game Doom
+	SpawnID 146
+	ClearFlags
+	states
+	{
+	Vanilla:
+		TNT1 A 1 A_SpawnItemEx("GibsVanilla")
+		stop
+	}
 }
 
 
