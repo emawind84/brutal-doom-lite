@@ -1125,14 +1125,12 @@ ACTOR HangingDeadGuyNoLeg: Meat3 Replaces Meat3
 	{
 	Vanilla:
 		TNT1 A 1 A_SpawnItemEx("Meat3Vanilla")
-		TNT1 A 0 A_Log("#Vanilla")
 		Stop
 	Spawn:
 	    TNT1 A 0
 		TNT1 A 1 ACS_NamedExecuteAlways("BDCheckDecorations", 0, 0, 0, 0)
         TNT1 A 0 A_SpawnItemEx("DripingBloodLeavesPool", 0, 0, 15, 0, 0)
 		TNT1 A 0 A_SpawnItem("GoreFliesWsound", 0, random(0, 45))
-		TNT1 A 0 A_Log("#BD")
 		TNT1 AAA 0 A_SpawnItem("GoreFlies", 0, random(0, 45))
 		GOR3 A 36
         Goto Stand
