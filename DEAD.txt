@@ -6,7 +6,7 @@
 //Go make your own mod, loosers.
 
 Actor DeadMarineVanilla : DeadMarine {}
-actor VeryDeadMarine: DeadMarine Replaces DeadMarine
+actor VeryDeadMarine: DeadMarine //Replaces DeadMarine
 {
 damagefactor "Avoid", 0.0
 damagefactor "Blood", 0.0    damagefactor "GreenBlood", 0.0    damagefactor "BlueBlood", 0.0    damagefactor "Taunt", 0.0    damagefactor "KillMe", 0.0
@@ -74,7 +74,7 @@ Radius 0
 }
 
 Actor GibbedMarineVanilla : GibbedMarine {}
-actor VeryVeryDeadMarine: GibbedMarine Replaces GibbedMarine
+actor VeryVeryDeadMarine: GibbedMarine //Replaces GibbedMarine
 {
 +CLIENTSIDEONLY
 damagefactor "Avoid", 0.0
@@ -125,7 +125,7 @@ damagefactor "Avoid", 0.0
 }
 
 Actor GibbedMarineExtraVanilla : GibbedMarineExtra {}
-actor VeryVeryDeadMarine2 : VeryVeryDeadMarine Replaces GibbedMarineExtra
+actor VeryVeryDeadMarine2 : VeryVeryDeadMarine //Replaces GibbedMarineExtra
 {
 	Game Doom
 	states
@@ -525,7 +525,7 @@ Loop    }}
 // Dead on a stick ---------------
 
 Actor DeadStickVanilla : DeadStick {}
-ACTOR DeadDeadStick: DeadStick Replaces DeadStick
+ACTOR DeadDeadStick: DeadStick //Replaces DeadStick
 {
 	Health 80
 	Mass 99999999
@@ -573,7 +573,7 @@ ACTOR DeadDeadStick: DeadStick Replaces DeadStick
 // Still alive on a stick --------------------------------------------------
 
 Actor LiveStickVanilla : LiveStick {}
-ACTOR DeadLiveStick: LiveStick Replaces LiveStick
+ACTOR DeadLiveStick: LiveStick //Replaces LiveStick
 {
 	Health 80
 	Mass 99999999
@@ -861,7 +861,7 @@ Actor ImpaledMarineAlive1d: ImpaledMarineAlive1
 {translation "112:127=[0,128,192]:[0,0,0]" }
 
 Actor BloodyTwitchVanilla : BloodyTwitch {}
-ACTOR DeadBloodyTwitch: BloodyTwitch Replaces BloodyTwitch
+ACTOR DeadBloodyTwitch: BloodyTwitch //Replaces BloodyTwitch
 {
 	Radius 16
 	Height 68
@@ -978,7 +978,7 @@ ACTOR DeadBloodyTwitchC: DeadBloodyTwitchB
 // Meat 2 ------------------------------------------------------------------
 
 Actor Meat2Vanilla : Meat2 {}
-ACTOR HangingBody: Meat2 Replaces Meat2
+ACTOR HangingBody: Meat2 //Replaces Meat2
 {
 	Radius 16
 	Height 84
@@ -1030,7 +1030,7 @@ ACTOR HangingBody: Meat2 Replaces Meat2
 }
 
 Actor Meat4Vanilla : Meat4 {}
-ACTOR HangingPairOfLegs: DeadBloodyTwitchB Replaces Meat4
+ACTOR HangingPairOfLegs: DeadBloodyTwitchB //Replaces Meat4
 {
     Health 100
 	damagefactor "Fire", 0.0
@@ -1064,7 +1064,7 @@ ACTOR HangingPairOfLegs: DeadBloodyTwitchB Replaces Meat4
 }
 
 Actor NonsolidMeat2Vanilla : NonsolidMeat2 {}
-ACTOR NSHangingBody : HangingBody Replaces NonsolidMeat2
+ACTOR NSHangingBody : HangingBody //Replaces NonsolidMeat2
 {
 	Game Doom
 	states
@@ -1076,7 +1076,7 @@ ACTOR NSHangingBody : HangingBody Replaces NonsolidMeat2
 }
 
 Actor NonsolidMeat4Vanilla : NonsolidMeat4 {}
-ACTOR NSHangingPairOfLegs : HangingPairOfLegs Replaces NonsolidMeat4
+ACTOR NSHangingPairOfLegs : HangingPairOfLegs //Replaces NonsolidMeat4
 {
 	Game Doom
 	states
@@ -1102,7 +1102,7 @@ ACTOR Meat2C: DeadBloodyTwitchB
 // Meat 3 ------------------------------------------------------------------
 
 Actor Meat3Vanilla : Meat3 {}
-ACTOR HangingDeadGuyNoLeg: Meat3 Replaces Meat3
+ACTOR HangingDeadGuyNoLeg: Meat3 //Replaces Meat3
 {
 	Radius 16
 	Height 84
@@ -1152,7 +1152,7 @@ ACTOR HangingDeadGuyNoLeg: Meat3 Replaces Meat3
 }
 
 Actor Meat5Vanilla : Meat5 {}
-ACTOR HangingLeg: DeadBloodyTwitchB Replaces Meat5
+ACTOR HangingLeg: DeadBloodyTwitchB //Replaces Meat5
 {
 	Radius 16
 	Height 52
@@ -1207,7 +1207,7 @@ ACTOR Meat3C: DeadBloodyTwitchB
 }
 
 Actor NonsolidMeat3Vanilla : NonsolidMeat3 {}
-ACTOR NSHangingDeadGuyNoLeg : HangingDeadGuyNoLeg Replaces NonsolidMeat3
+ACTOR NSHangingDeadGuyNoLeg : HangingDeadGuyNoLeg //Replaces NonsolidMeat3
 {
 	Game Doom
 	states
@@ -1219,7 +1219,7 @@ ACTOR NSHangingDeadGuyNoLeg : HangingDeadGuyNoLeg Replaces NonsolidMeat3
 }
 
 Actor NonsolidMeat5Vanilla : NonsolidMeat5 {}
-ACTOR NSHangingLeg : HangingLeg Replaces NonsolidMeat5
+ACTOR NSHangingLeg : HangingLeg //Replaces NonsolidMeat5
 {
 	Game Doom
 	states
@@ -1233,7 +1233,7 @@ ACTOR NSHangingLeg : HangingLeg Replaces NonsolidMeat5
 // Nonsolid bloody twitch --------------------------------------------------
 
 Actor NonsolidTwitchVanilla : NonsolidTwitch {}
-ACTOR DeadNonsolidTwitch : DeadBloodyTwitch Replaces NonsolidTwitch
+ACTOR DeadNonsolidTwitch : DeadBloodyTwitch //Replaces NonsolidTwitch
 {
 	Game Doom
 	states
@@ -1247,7 +1247,7 @@ ACTOR DeadNonsolidTwitch : DeadBloodyTwitch Replaces NonsolidTwitch
 // Hanging with no guts ----------------------------------------------------
 
 Actor HangNoGutsVanilla : HangNoGuts {}
-ACTOR DeadHangNoGuts: HangNoGuts Replaces HangNoGuts
+ACTOR DeadHangNoGuts: HangNoGuts //Replaces HangNoGuts
 {
 	Radius 20
 	Height 90
@@ -1297,7 +1297,7 @@ ACTOR DeadHangNoGuts: HangNoGuts Replaces HangNoGuts
 // Hanging from bottom with no brain ---------------------------------------
 
 Actor HangBNoBrainVanilla : HangBNoBrain {}
-ACTOR DeadHangBNoBrain: DeadHangNoGuts Replaces HangBNoBrain
+ACTOR DeadHangBNoBrain: DeadHangNoGuts //Replaces HangBNoBrain
 {
 	Radius 16
 	Height 88
@@ -1323,7 +1323,7 @@ ACTOR DeadHangBNoBrain: DeadHangNoGuts Replaces HangBNoBrain
 // Hanging from top, looking down ------------------------------------------
 
 Actor HangTLookingDownVanilla : HangTLookingDown {}
-ACTOR DeadHangTLookingDown: DeadHangNoGuts Replaces HangTLookingDown
+ACTOR DeadHangTLookingDown: DeadHangNoGuts //Replaces HangTLookingDown
 {
 	Radius 16
 	Height 64
@@ -1351,7 +1351,7 @@ ACTOR DeadHangTLookingDown: DeadHangNoGuts Replaces HangTLookingDown
 // Hanging from top, looking up --------------------------------------------
 
 Actor HangTLookingUpVanilla : HangTLookingUp {}
-ACTOR DeadHangTLookingUp: DeadHangNoGuts Replaces HangTLookingUp
+ACTOR DeadHangTLookingUp: DeadHangNoGuts //Replaces HangTLookingUp
 {
 	Radius 16
 	Height 64
@@ -1379,7 +1379,7 @@ ACTOR DeadHangTLookingUp: DeadHangNoGuts Replaces HangTLookingUp
 // Hanging from top, skully ------------------------------------------------
 
 Actor HangTSkullVanilla : HangTSkull {}
-ACTOR DeadHangTSkull: DeadHangNoGuts replaces HangTSkull
+ACTOR DeadHangTSkull: DeadHangNoGuts //Replaces HangTSkull
 {
 	Radius 16
 	Height 64
@@ -1407,7 +1407,7 @@ ACTOR DeadHangTSkull: DeadHangNoGuts replaces HangTSkull
 // Hanging from top without a brain ----------------------------------------
 
 Actor HangTNoBrainVanilla : HangTNoBrain {}
-ACTOR DeadHangTNoBrain: DeadHangNoGuts Replaces HangTNoBrain
+ACTOR DeadHangTNoBrain: DeadHangNoGuts //Replaces HangTNoBrain
 {
 	Radius 16
 	Height 64
@@ -1545,7 +1545,7 @@ ACTOR DyingRevenant
 
 
 Actor ColonGibsVanilla : ColonGibs {}
-ACTOR ColonGibs2 replaces ColonGibs
+ACTOR ColonGibs2 //Replaces ColonGibs
 {
 	Game Doom
 	SpawnID 147
@@ -1571,7 +1571,7 @@ ACTOR ColonGibs2 replaces ColonGibs
 
 
 Actor SmallBloodPoolVanilla : SmallBloodPool {}
-ACTOR SmallBloodPool2 Replaces SmallBloodPool
+ACTOR SmallBloodPool2 //Replaces SmallBloodPool
 {
 	Game Doom
 	SpawnID 148
@@ -1598,7 +1598,7 @@ ACTOR SmallBloodPool2 Replaces SmallBloodPool
 // brain stem lying on the ground ------------------------------------------
 
 Actor BrainStemVanilla : BrainStem {}
-ACTOR BrainStem2 Replaces BrainStem
+ACTOR BrainStem2 //Replaces BrainStem
 {
 	Game Doom
 	SpawnID 150
@@ -1621,7 +1621,7 @@ ACTOR BrainStem2 Replaces BrainStem
 }
 
 Actor RealGibsVanilla : RealGibs {}
-ACTOR RealGibs2 Replaces RealGibs
+ACTOR RealGibs2 //Replaces RealGibs
 {
 	+DROPOFF
 	+CORPSE
@@ -1642,7 +1642,7 @@ ACTOR RealGibs2 Replaces RealGibs
 }
 
 Actor GibsVanilla : Gibs {}
-ACTOR Gibs2 : RealGibs2 Replaces Gibs
+ACTOR Gibs2 : RealGibs2 //Replaces Gibs
 {
 	Game Doom
 	SpawnID 146
