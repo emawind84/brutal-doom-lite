@@ -39,7 +39,7 @@ ACTOR Marine_BFG1PathfinderNew: Marine1Pathfinder
 	    TNT1 A 0 A_Recoil(-4)
 		TNT1 A 1
 		TNT1 A 0 A_JumpIf(momx == 0, "CheckAgain")
-	SpawnMarine:	
+	SpawnMarine:
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_SpawnItemEx("Marine_BFG",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
@@ -67,7 +67,7 @@ ACTOR Marine_BFGSpawn: RedTorch
 		PLA7 A 1 A_CheckSight("DontSpawn")
 		TNT1 A 0 A_Chase
 		TNT1 A 0 A_Look
-	See:	
+	See:
 		TNT1 A 0 A_GiveToTarget("NumberOfAlliesBFG", 1)
 		TNT1 A 0 A_SpawnItemEx ("Marine_BFG",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0)
         Stop
