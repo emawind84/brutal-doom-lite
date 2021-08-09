@@ -700,7 +700,7 @@ ACTOR ShortRedTorchVanilla
 	Radius 16
 	Height 37
 	ProjectilePassHeight -16
-	+SOLID
+	-SOLID
 	States
 	{
 	Spawn:
