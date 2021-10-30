@@ -636,7 +636,7 @@ ACTOR RedTorchVanilla
 	Radius 16
 	Height 68
 	ProjectilePassHeight -16
-	+SOLID
+	-SOLID
 	States
 	{
 	Spawn:
@@ -652,7 +652,7 @@ ACTOR BlueTorchVanilla
 	Radius 16
 	Height 68
 	ProjectilePassHeight -16
-	+SOLID
+	-SOLID
 	States
 	{
 	Spawn:
@@ -668,7 +668,7 @@ ACTOR GreenTorchVanilla
 	Radius 16
 	Height 68
 	ProjectilePassHeight -16
-	+SOLID
+	-SOLID
 	States
 	{
 	Spawn:
@@ -716,7 +716,7 @@ ACTOR ShortGreenTorchVanilla
 	Radius 16
 	Height 37
 	ProjectilePassHeight -16
-	+SOLID
+	-SOLID
 	States
 	{
 	Spawn:
