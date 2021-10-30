@@ -19,7 +19,8 @@ ACTOR Melee_Attacks : BrutalWeapon Replaces Fist
 	Tag "Fists"
 	States
 	{
-	
+	Spawn:
+		stop
 	
 	Steady:
 	TNT1 A 1
