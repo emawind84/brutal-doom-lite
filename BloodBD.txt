@@ -477,12 +477,6 @@ ACTOR RedBloodFootPrintRight: GrowingBloodPool
 
 
 
-actor DeadBlood
+actor DeadBlood : Blood
 {
-	states
-	{
-	Spawn:
-		TNT1 A 0
-		stop
-	}
 }
