@@ -1,2 +1,2 @@
-STARTUPTITLE = "Sergeant_Mark_IV's BRUTAL DOOM v21 - No Gore"
+STARTUPTITLE = "Sergeant_Mark_IV's BRUTAL DOOM v21 - Weapons Only"
 STARTUPCOLORS = "FF0000", "000000"
